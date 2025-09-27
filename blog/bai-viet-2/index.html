@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html lang="vi-vn">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     
-    <title>So sánh Java và JavaScript – Tưởng giống mà khác xa | TaansFast</title>
+    <title>So sánh Java và JavaScript – Tưởng giống mà khác xa | TaansFast - Blog Lập Trình Mạng</title>
     <meta name="viewport" content="width=device-width,minimum-scale=1">
     <meta name="description" content="So sánh Java và JavaScript (2025)
 Nguồn gốc, môi trường chạy, cú pháp, ứng dụng thực tế và gợi ý học tập.
@@ -15,6 +15,7 @@ Kèm code snippets và bảng so sánh nhanh.">
     
       <meta name="robots" content="index, follow">
     
+    <meta name="author" content="TaansFast">
     
 
     
@@ -34,20 +35,24 @@ Kèm code snippets và bảng so sánh nhanh.">
     
 
     
-      <link rel="canonical" href="https://example.org/blog/bai-viet-2/">
+      <link rel="canonical" href="https://taansfast.com/blog/bai-viet-2/">
     
 
-    <meta property="og:url" content="https://example.org/blog/bai-viet-2/">
-  <meta property="og:site_name" content="TaansFast">
+    <meta property="og:url" content="https://taansfast.com/blog/bai-viet-2/">
+  <meta property="og:site_name" content="TaansFast - Blog Lập Trình Mạng">
   <meta property="og:title" content="So sánh Java và JavaScript – Tưởng giống mà khác xa">
   <meta property="og:description" content="So sánh Java và JavaScript (2025)
 Nguồn gốc, môi trường chạy, cú pháp, ứng dụng thực tế và gợi ý học tập.
 Kèm code snippets và bảng so sánh nhanh.">
-  <meta property="og:locale" content="en_us">
+  <meta property="og:locale" content="vi_vn">
   <meta property="og:type" content="article">
     <meta property="article:section" content="blog">
     <meta property="article:published_time" content="2025-09-19T00:00:00+00:00">
     <meta property="article:modified_time" content="2025-09-19T00:00:00+00:00">
+    <meta property="article:tag" content="Java">
+    <meta property="article:tag" content="Javascript">
+    <meta property="article:tag" content="Comparison">
+    <meta property="article:tag" content="Programming">
 
   <meta itemprop="name" content="So sánh Java và JavaScript – Tưởng giống mà khác xa">
   <meta itemprop="description" content="So sánh Java và JavaScript (2025)
@@ -55,12 +60,14 @@ Nguồn gốc, môi trường chạy, cú pháp, ứng dụng thực tế và g�
 Kèm code snippets và bảng so sánh nhanh.">
   <meta itemprop="datePublished" content="2025-09-19T00:00:00+00:00">
   <meta itemprop="dateModified" content="2025-09-19T00:00:00+00:00">
-  <meta itemprop="wordCount" content="879">
+  <meta itemprop="wordCount" content="1241">
+  <meta itemprop="keywords" content="Java,Javascript,Comparison,Programming">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="So sánh Java và JavaScript – Tưởng giống mà khác xa">
   <meta name="twitter:description" content="So sánh Java và JavaScript (2025)
 Nguồn gốc, môi trường chạy, cú pháp, ứng dụng thực tế và gợi ý học tập.
 Kèm code snippets và bảng so sánh nhanh.">
+      <meta name="twitter:site" content="@https://twitter.com/taansfast">
 
       
     
@@ -70,13 +77,16 @@ Kèm code snippets và bảng so sánh nhanh.">
     
   
 
-  <header>
-    <div class="bg-black">
+  
+  
+  
+  <header class="cover bg-center" style="background-image: url('https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://images.ctfassets.net/wp1lcwdav1p1/3iUNzpSg7BUtcHaUW1MQdc/2f11876a723565d664728e4cf2b2e2c9/GettyImages-1280720370_edited.png?w=1500&amp;h=680&amp;q=60&amp;fit=fill&amp;f=faces&amp;fm=jpg&amp;fl=progressive&amp;auto=format%2Ccompress&amp;dpr=2&amp;w=1000');">
+    <div class="bg-black-60">
       <nav class="pv3 ph3 ph4-ns" role="navigation">
   <div class="flex-l center items-center justify-between">
     <a href="/" class="f3 fw2 hover-white white-90 dib no-underline">
       
-        TaansFast
+        TaansFast - Blog Lập Trình Mạng
       
     </a>
     <div class="flex-l items-center">
@@ -86,8 +96,8 @@ Kèm code snippets và bảng so sánh nhanh.">
         <ul class="pl0 mr3">
           
           <li class="list f5 f4-ns fw4 dib pr3">
-            <a class="hover-white white-90 no-underline" href="/" title="Home page">
-              Home
+            <a class="hover-white white-90 no-underline" href="/" title="Trang chủ page">
+              Trang chủ
             </a>
           </li>
           
@@ -98,14 +108,14 @@ Kèm code snippets và bảng so sánh nhanh.">
           </li>
           
           <li class="list f5 f4-ns fw4 dib pr3">
-            <a class="hover-white white-90 no-underline" href="/about/" title="About page">
-              About
+            <a class="hover-white white-90 no-underline" href="/about/" title="Giới thiệu page">
+              Giới thiệu
             </a>
           </li>
           
           <li class="list f5 f4-ns fw4 dib pr3">
-            <a class="hover-white white-90 no-underline" href="/contact/" title="Contact page">
-              Contact
+            <a class="hover-white white-90 no-underline" href="/contact/" title="Liên hệ page">
+              Liên hệ
             </a>
           </li>
           
@@ -117,6 +127,12 @@ Kèm code snippets và bảng so sánh nhanh.">
   </div>
 </nav>
 
+      <div class="tc-l pv6 ph3 ph4-ns">
+        
+          <div class="f2 f1-l fw2 white-90 mb0 lh-title">So sánh Java và JavaScript – Tưởng giống mà khác xa</div>
+          
+        
+      </div>
     </div>
   </header>
 
@@ -124,32 +140,40 @@ Kèm code snippets và bảng so sánh nhanh.">
 
     <main class="pb7" role="main">
       
-<article class="mw8 center ph3">
+<article class="mw8 center ph3 ph0-l">
   
-  <div id="reading-progress-wrap" class="fixed top-0 left-0 w-100" style="z-index:9999;">
-    <div id="reading-progress" style="height:3px; width:0%; transition:width .15s ease;"></div>
+  <div id="reading-progress-wrap" class="fixed top-0 left-0 w-100 z-9999">
+    <div id="reading-progress" class="reading-progress-bar"></div>
   </div>
 
   
   
   
-  <header class="mv4">
-    <h1 class="f1 athelas mv0">So sánh Java và JavaScript – Tưởng giống mà khác xa</h1>
-  </header>
+  <section class="mb5 relative hero-section">
+    <figure class="w-100 ma0" aria-hidden="true">
+      <img src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://images.ctfassets.net/wp1lcwdav1p1/3iUNzpSg7BUtcHaUW1MQdc/2f11876a723565d664728e4cf2b2e2c9/GettyImages-1280720370_edited.png?w=1500&amp;h=680&amp;q=60&amp;fit=fill&amp;f=faces&amp;fm=jpg&amp;fl=progressive&amp;auto=format%2Ccompress&amp;dpr=2&amp;w=1000" alt="So sánh Java và JavaScript – Tưởng giống mà khác xa" class="db w-100 hero-image">
+    </figure>
+    <div class="absolute left-0 bottom-0 pa4 w-100 hero-overlay">
+      <h1 class="f1-ns f2 mv0 white">So sánh Java và JavaScript – Tưởng giống mà khác xa</h1>
+      
+    </div>
+  </section>
   
 
   <div class="flex-l flex-wrap">
     
-    <main class="w-two-thirds-l w-100 pr4-l">
-      <div class="mb3 f6 gray">
+    <main class="w-two-thirds-l w-100 pr5-l">
+      <div class="mb4 f6 gray meta-info">
+        
+          <span class="mr3">✍️ <strong>TaansFast</strong></span>
         
         
           <time datetime="2025-09-19T00:00:00Z">September 19, 2025</time> ·
         
-        <span>5 minutes read · 879 words</span>
+        <span>6 minutes read · 1241 words</span>
       </div>
 
-      <div class="nested-copy-line-height lh-copy serif f4 nested-links mid-gray">
+      <div class="article-content nested-copy-line-height lh-copy serif f4 nested-links dark-gray">
         <p><strong>So sánh Java và JavaScript (2025)</strong></p>
 <p>Nguồn gốc, môi trường chạy, cú pháp, ứng dụng thực tế và gợi ý học tập.<br>
 Kèm code snippets và bảng so sánh nhanh.</p>
@@ -175,11 +199,12 @@ Kèm code snippets và bảng so sánh nhanh.</p>
 <li><strong>Java</strong>: Biên dịch sang bytecode (<code>.class</code>) → JVM chuyển thành mã máy tuỳ OS. Môi trường: server, desktop, Android (ART là runtime tương tự JVM trên Android).</li>
 <li><strong>JavaScript</strong>: Thông dịch/biên dịch JIT trong engine trình duyệt (V8, SpiderMonkey, JavaScriptCore). Nhờ Node.js, JS chạy được trên server, trên desktop (Electron), và mobile (React Native).</li>
 </ul>
-<p><img src="/images/hinh3.png" alt="Ảnh của tui">
-<em>&ldquo;Sơ đồ JVM&rdquo;</em></p>
-<p><img src="/images/hinh4.png" alt="Ảnh của tui">
-<em>&ldquo;Sơ đồ JS Engine&rdquo;</em></p>
-<p><em>(So sánh luồng chạy: Java bytecode -&gt; JVM; JavaScript -&gt; V8/JS engine -&gt; trình duyệt/Node.js.)</em></p>
+<p><strong>🔎 Java Virtual Machine (JVM) - Cỗ máy đa năng của Java</strong>
+<img src="/images/hinh3.png" alt="Ảnh của tui">
+<em>Sơ đồ trên minh họa luồng đi của mã Java: Source code (<code>.java</code>) được biên dịch thành Bytecode (<code>.class</code>). JVM sẽ nạp và kiểm tra bytecode này, sau đó sử dụng trình thông dịch (Interpreter) và trình biên dịch tức thì (JIT Compiler) để chuyển đổi nó thành mã máy (Machine Code) tương ứng với từng hệ điều hành, giúp hiện thực hóa triết lý &ldquo;Viết một lần, chạy mọi nơi&rdquo;.</em></p>
+<p><strong>🔎 JavaScript Engine (V8) - Trái tim của tốc độ</strong>
+<img src="/images/hinh4.png" alt="Ảnh của tui">
+<em>Sơ đồ mô tả cách JavaScript Engine (ví dụ V8 của Chrome) xử lý code: JS source được parse thành Abstract Syntax Tree (AST). Bộ thông dịch (Ignition) dịch AST thành bytecode và thực thi ngay để app chạy nhanh. Đồng thời, bộ biên dịch tối ưu (TurboFan) phân tích mã nóng (hot code) và biên dịch nó thành mã máy tối ưu (Optimized Machine Code), giúp hiệu năng tăng vọt sau một thời gian chạy. Đây là cơ chế JIT (Just-In-Time) compilation.</em></p>
 <hr>
 <h1 id="3-kiểu-dữ-liệu--cú-pháp--ngắn-gọn-hiệu-quả">3. Kiểu dữ liệu &amp; cú pháp — ngắn gọn, hiệu quả</h1>
 <h3 id="java-strongly-typed">Java (Strongly-typed)</h3>
@@ -207,17 +232,17 @@ Kèm code snippets và bảng so sánh nhanh.</p>
 <hr>
 <h1 id="5-hiệu-năng--concurrency-chi-tiết-hơn-một-chút">5. Hiệu năng &amp; concurrency (chi tiết hơn một chút)</h1>
 <ul>
-<li><strong>Java</strong>: Thường tốt cho tác vụ CPU-bound, đa luồng (multi-threading). JVM có GC, JIT optimizer, tuning cho production-grade workloads.</li>
+<li><strong>Java</strong>: hường tốt cho tác vụ CPU-bound, đa luồng (multi-threading). JVM có GC, JIT optimizer, tuning cho production-grade workloads. 🔥 Xu hướng 2025: Project Loom được kỳ vọng sẽ cách mạng hóa mô hình concurrency trong Java bằng virtual threads (lightweight threads), giúp viết code xử lý bất đồng bộ hiệu suất cao mà vẫn giữ cú pháp đồng bộ, quen thuộc.</li>
 <li><strong>JavaScript</strong>: Single-threaded event loop, non-blocking I/O (Node.js) cực kỳ hiệu quả cho I/O-bound workloads. Worker threads / cluster có thể scale nhưng không giống mô hình threading nguyên bản của Java.</li>
 </ul>
 <p><strong>Kết luận:</strong> Với tính toán nặng, Java có ưu thế rõ rệt; với I/O, real-time web — JavaScript rất mạnh.</p>
 <hr>
 <h1 id="6-cộng-đồng--hệ-sinh-thái">6. Cộng đồng &amp; hệ sinh thái</h1>
 <ul>
-<li><strong>Java</strong>: Ổn định, mature. Framework nổi bật: Spring (Spring Boot), Hibernate. Thích hợp cho doanh nghiệp lớn.</li>
-<li><strong>JavaScript</strong>: Siêu sôi động, tốc độ phát triển framework cao. npm khổng lồ (hơn 2 triệu packages).</li>
+<li><strong>Java</strong>: Ổn định, mature. Framework nổi bật: Spring (Spring Boot), Hibernate. Thích hợp cho doanh nghiệp lớn. 🔄 Jakarta EE (kế thừa Java EE) tiếp tục là nền tảng vững chắc cho các ứng dụng doanh nghiệp quy mô lớn.</li>
+<li><strong>JavaScript</strong>: Siêu sôi động, tốc độ phát triển framework cao. npm khổng lồ (hơn 2 triệu packages). 🌟 TypeScript đã trở thành tiêu chuẩn de facto cho các dự án frontend và backend nghiêm túc, giúp bù đắp điểm yếu về dynamic typing của JS. Các meta-framework như Next.js (React), Nuxt (Vue), và SvelteKit ngày càng thống trị, cung cấp giải pháp full-stack tích hợp sẵn từ routing đến SSR, giảm đáng kể việc phải cấu hình.
+<strong>Lưu ý:</strong> hệ sinh thái JS dễ bị ‘framework churn’ — cần chọn stack kỹ. Tuy nhiên, xu hướng 2025 cho thấy sự tập trung vào các framework lớn, ổn định (React, Vue, Next, Nuxt) hơn là sự xuất hiện của các framework mới gây xáo trộn.</li>
 </ul>
-<p><strong>Lưu ý:</strong> hệ sinh thái JS dễ bị ‘framework churn’ — cần chọn stack kỹ.</p>
 <hr>
 <h1 id="bảng-so-sánh-nhanh">Bảng so sánh nhanh</h1>
 <table>
@@ -272,6 +297,7 @@ Kèm code snippets và bảng so sánh nhanh.</p>
 <li><strong>Java newbie</strong>: Quên import package hoặc mismatch version Spring → lỗi khi chạy.</li>
 <li><strong>JS newbie</strong>: <code>undefined</code> vs <code>null</code>, hoisting, async/await chưa hiểu rõ → lỗi logic runtime.</li>
 <li><strong>Common</strong>: Không viết test, deploy thẳng lên production — recipe cho lỗi.</li>
+<li><strong>Modern Trap</strong>: Cố gắng dùng &ldquo;Pure JavaScript&rdquo; cho một dự án phức tạp thay vì sử dụng TypeScript ngay từ đầu, dẫn đến codebase khó bảo trì. Hoặc nhảy theo một framework JS mới nổi chưa được kiểm chứng thay vì chọn những framework đã ổn định.</li>
 </ol>
 <p><strong>Tips:</strong> always write tests, enable linting (Checkstyle/SpotBugs cho Java; ESLint + TypeScript cho JS).</p>
 <hr>
@@ -308,6 +334,7 @@ Kèm code snippets và bảng so sánh nhanh.</p>
 <hr>
 <p>Đừng để một chữ trong tên đánh lừa con đường học tập của bạn. Hãy chọn công cụ phù hợp với bài toán, nhưng cũng đừng đóng cửa trước cơ hội — vì đôi khi, người mặc comple và người mặc hoodie hợp tác với nhau sẽ tạo nên một sản phẩm hoàn hảo.</p>
 <hr>
+ <h2 class="f3 fw6 mb3">Care to comment</h2>
   <script src="https://utteranc.es/client.js"
         repo="Fast-9999/Fast-9999.github.io"
         issue-term="pathname"
@@ -318,6 +345,21 @@ Kèm code snippets và bảng so sánh nhanh.</p>
       </div>
 
       
+      
+      <div class="mv5">
+        <h4 class="f5 ttu tracked mb3">Tags</h4>
+        <div class="flex flex-wrap">
+          
+            <a href="/tags/java/" class="mr2 mb2 no-underline tag-chip">java</a>
+          
+            <a href="/tags/javascript/" class="mr2 mb2 no-underline tag-chip">javascript</a>
+          
+            <a href="/tags/comparison/" class="mr2 mb2 no-underline tag-chip">comparison</a>
+          
+            <a href="/tags/programming/" class="mr2 mb2 no-underline tag-chip">programming</a>
+          
+        </div>
+      </div>
       
 
       
@@ -331,18 +373,22 @@ Kèm code snippets và bảng so sánh nhanh.</p>
     </main>
 
     
-    <aside class="w-30-l w-100 mt4-l mt3">
+    <aside class="w-30-l w-100 mt5-l mt4">
       
-      <div class="mb4">
+      <div class="mb5 sticky-aside">
         <div id="sharing" class="mt3 ananke-socials"></div>
 
       </div>
 
       
-      <div class="bt b--black-10 pa3">
-        <h4 class="f6 ttu tracked mb2">Bài viết liên quan</h4>
+      <div class="ba b--light-gray pa4 br2 related-posts">
+        <h4 class="f5 ttu tracked mb3">Bài viết liên quan</h4>
         <ul class="list pl0">
           
+          
+            
+              <li class="mb3"><a href="/blog/bai-viet-1/" class="no-underline dark-gray hover-dark-blue">Java cơ bản — Từ lớp đến JVM: hiểu để code không blind</a></li>
+            
           
             
           
@@ -350,7 +396,7 @@ Kèm code snippets và bảng so sánh nhanh.</p>
       </div>
 
       
-      <div class="mt4">
+      <div class="mt5">
 
 
 
@@ -381,22 +427,200 @@ Kèm code snippets và bảng so sánh nhanh.</p>
 
 <style>
  
-#reading-progress { background: #ff7a59; height:3px; width:0; }
-.tag-chip {
-  display:inline-block;
-  padding:.35rem .6rem;
-  border-radius:999px;
-  background: rgba(0,0,0,0.06);
-  color: #111;
-  font-size: .9rem;
-  text-decoration:none;
-  transition:transform .08s ease;
+:root {
+  --text-color: #2d3748;
+  --light-text: #718096;
+  --background: #ffffff;
+  --light-background: #f7fafc;
+  --accent: #4299e1;
+  --accent-light: #90cdf4;
+  --border-color: #e2e8f0;
 }
-.tag-chip:hover { transform:translateY(-2px); background: rgba(0,0,0,0.09); }
+
+body {
+  color: var(--text-color);
+  line-height: 1.7;
+}
+
+ 
+.reading-progress-bar {
+  height: 4px; 
+  width: 0%; 
+  transition: width .2s ease;
+  background: var(--accent);
+  box-shadow: 0 1px 3px rgba(66, 153, 225, 0.3);
+}
+
+ 
+.hero-section {
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.hero-image {
+  object-fit: cover; 
+  max-height: 480px; 
+  width: 100%;
+}
+
+.hero-overlay {
+  background: linear-gradient(0deg, rgba(0,0,0,.7) 0%, rgba(0,0,0,0) 100%);
+}
+
+ 
+.article-content {
+  color: var(--text-color);
+  font-size: 1.125rem;
+  line-height: 1.8;
+}
+
+.article-content p {
+  margin-bottom: 1.5rem;
+}
+
+.article-content h2 {
+  font-size: 1.8rem;
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+  color: #1a202c;
+}
+
+.article-content h3 {
+  font-size: 1.5rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  color: #2d3748;
+}
+
+.article-content blockquote {
+  border-left: 4px solid var(--accent);
+  padding-left: 1.5rem;
+  margin-left: 0;
+  font-style: italic;
+  color: var(--light-text);
+}
+
+.article-content a {
+  color: var(--accent);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.article-content a:hover {
+  color: #2b6cb0;
+}
+
+ 
+.meta-info {
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--border-color);
+}
+
+ 
+.tag-chip {
+  display: inline-block;
+  padding: 0.4rem 0.8rem;
+  border-radius: 999px;
+  background: var(--light-background);
+  color: var(--text-color);
+  font-size: 0.9rem;
+  text-decoration: none;
+  transition: all 0.15s ease;
+  border: 1px solid var(--border-color);
+}
+
+.tag-chip:hover {
+  transform: translateY(-2px);
+  background: var(--accent-light);
+  color: #2c5282;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
+
+ 
+.author-card {
+  background: var(--light-background);
+  border-radius: 8px;
+  border: none;
+  padding: 1.5rem;
+}
+
+.author-image {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.author-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+ 
+.sticky-aside {
+  position: sticky;
+  top: 2rem;
+}
+
+.related-posts {
+  background: var(--light-background);
+  border: none;
+  border-radius: 8px;
+}
+
+.related-posts a {
+  color: var(--text-color);
+  transition: color 0.15s ease;
+}
+
+.related-posts a:hover {
+  color: var(--accent);
+}
+
+ 
 @media (max-width: 60rem) {
-  .w-two-thirds-l { width:100%; padding-right:0; }
-  .w-30-l { width:100%; }
-  #reading-progress-wrap { position:fixed; top:0; }
+  .w-two-thirds-l { 
+    width: 100%; 
+    padding-right: 0; 
+  }
+  
+  .w-30-l { 
+    width: 100%; 
+  }
+  
+  .hero-section {
+    border-radius: 0;
+    margin-left: -1.5rem;
+    margin-right: -1.5rem;
+    width: calc(100% + 3rem);
+  }
+  
+  .article-content {
+    font-size: 1.05rem;
+  }
+  
+  .sticky-aside {
+    position: relative;
+    top: 0;
+  }
+}
+
+@media (max-width: 30rem) {
+  .ph3 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  
+  .hero-overlay {
+    padding: 1.5rem;
+  }
+  
+  .article-content {
+    font-size: 1rem;
+  }
 }
 </style>
 
@@ -435,8 +659,8 @@ Kèm code snippets và bảng so sánh nhanh.</p>
 
       
       <div class="w-100 w-30-l mb4 mb0-l">
-        <a href="https://example.org/" class="link white hover-light-gray dib footer-focus" aria-label="TaansFast - Trang chủ" title="Trang chủ">
-          <h2 class="f3 fw7 tracked-tight mv0">TaansFast</h2>
+        <a href="https://taansfast.com/" class="link white hover-light-gray dib footer-focus" aria-label="TaansFast - Blog Lập Trình Mạng - Trang chủ" title="Trang chủ">
+          <h2 class="f3 fw7 tracked-tight mv0">TaansFast - Blog Lập Trình Mạng</h2>
         </a>
 
         
@@ -519,7 +743,7 @@ Kèm code snippets và bảng so sánh nhanh.</p>
     
     <div class="flex-ns flex-wrap justify-between items-center">
       <p class="f6 mv0">
-        © 2025 TaansFast. All rights reserved.
+        © 2025 TaansFast - Blog Lập Trình Mạng. All rights reserved.
       </p>
       <p class="f6 mv0 mt3 mt0-ns">
         Made with ❤️ using <a href="https://gohugo.io" class="link dim white-70 hover-white footer-focus" rel="noopener noreferrer" target="_blank">Hugo</a>.
@@ -528,6 +752,5 @@ Kèm code snippets và bảng so sánh nhanh.</p>
 
   </div>
 </footer>
-
   </body>
 </html>

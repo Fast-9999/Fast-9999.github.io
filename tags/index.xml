@@ -1,11 +1,54 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on TaansFast</title>
-    <link>https://example.org/tags/</link>
-    <description>Recent content in Tags on TaansFast</description>
+    <title>Tags on TaansFast - Blog Lập Trình Mạng</title>
+    <link>https://taansfast.com/tags/</link>
+    <description>Recent content in Tags on TaansFast - Blog Lập Trình Mạng</description>
     <generator>Hugo</generator>
-    <language>en-us</language>
-    <atom:link href="https://example.org/tags/index.xml" rel="self" type="application/rss+xml" />
+    <language>vi-vn</language>
+    <lastBuildDate>Mon, 22 Sep 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://taansfast.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Java</title>
+      <link>https://taansfast.com/tags/java/</link>
+      <pubDate>Mon, 22 Sep 2025 00:00:00 +0000</pubDate>
+      <guid>https://taansfast.com/tags/java/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Jvm</title>
+      <link>https://taansfast.com/tags/jvm/</link>
+      <pubDate>Mon, 22 Sep 2025 00:00:00 +0000</pubDate>
+      <guid>https://taansfast.com/tags/jvm/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Oop</title>
+      <link>https://taansfast.com/tags/oop/</link>
+      <pubDate>Mon, 22 Sep 2025 00:00:00 +0000</pubDate>
+      <guid>https://taansfast.com/tags/oop/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Programming</title>
+      <link>https://taansfast.com/tags/programming/</link>
+      <pubDate>Mon, 22 Sep 2025 00:00:00 +0000</pubDate>
+      <guid>https://taansfast.com/tags/programming/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Comparison</title>
+      <link>https://taansfast.com/tags/comparison/</link>
+      <pubDate>Fri, 19 Sep 2025 00:00:00 +0000</pubDate>
+      <guid>https://taansfast.com/tags/comparison/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Javascript</title>
+      <link>https://taansfast.com/tags/javascript/</link>
+      <pubDate>Fri, 19 Sep 2025 00:00:00 +0000</pubDate>
+      <guid>https://taansfast.com/tags/javascript/</guid>
+      <description></description>
+    </item>
   </channel>
 </rss>
