@@ -1,28 +1,27 @@
 <!DOCTYPE html>
 <html lang="vi-vn">
-  <head>
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     
     <title>Java cơ bản — Từ lớp đến JVM: hiểu để code không blind | TaansFast - Blog Lập Trình Mạng</title>
     <meta name="viewport" content="width=device-width,minimum-scale=1">
     <meta name="description" content="Java cơ bản — Từ lớp đến JVM: hiểu để code không blind
+
 Slug: java-jvm-oop-co-ban
 Meta description: Giải mã OOP và JVM (JDK/JRE/JVM), hiểu stack vs heap, GC, primitive vs wrapper và immutable — nền tảng để bạn viết Java vững vàng, ít bị lỗi runtime.
-
-TL;DR
 Giải mã OOP &#43; JVM (JDK/JRE/JVM) — nắm rõ lifecycle và memory model (stack vs heap, GC) để tránh lỗi runtime và rò rỉ logic. Hiểu nền tảng, code sẽ sạch và dễ duy trì.">
     <meta name="generator" content="Hugo 0.150.0">
     
     
     
-      <meta name="robots" content="index, follow">
+      <meta name="robots" content="noindex, nofollow">
     
     <meta name="author" content="TaansFast">
     
 
     
-<link rel="stylesheet" href="/ananke/css/main.min.2438bcafd7af9675c426d1a4afcd16cfff18e4e10f401071e45b5ccd3be40a0d.css" >
+<link rel="stylesheet" href="/ananke/css/main.min.css" >
 
 
 
@@ -38,15 +37,15 @@ Giải mã OOP &#43; JVM (JDK/JRE/JVM) — nắm rõ lifecycle và memory model 
     
 
     
-      <link rel="canonical" href="https://taansfast.com/blog/bai-viet-1/">
+      <link rel="canonical" href="http://localhost:1313/blog/bai-viet-1/">
     
 
-    <meta property="og:url" content="https://taansfast.com/blog/bai-viet-1/">
+    <meta property="og:url" content="http://localhost:1313/blog/bai-viet-1/">
   <meta property="og:site_name" content="TaansFast - Blog Lập Trình Mạng">
   <meta property="og:title" content="Java cơ bản — Từ lớp đến JVM: hiểu để code không blind">
   <meta property="og:description" content="Java cơ bản — Từ lớp đến JVM: hiểu để code không blind Slug: java-jvm-oop-co-ban
 Meta description: Giải mã OOP và JVM (JDK/JRE/JVM), hiểu stack vs heap, GC, primitive vs wrapper và immutable — nền tảng để bạn viết Java vững vàng, ít bị lỗi runtime.
-TL;DR Giải mã OOP &#43; JVM (JDK/JRE/JVM) — nắm rõ lifecycle và memory model (stack vs heap, GC) để tránh lỗi runtime và rò rỉ logic. Hiểu nền tảng, code sẽ sạch và dễ duy trì.">
+Giải mã OOP &#43; JVM (JDK/JRE/JVM) — nắm rõ lifecycle và memory model (stack vs heap, GC) để tránh lỗi runtime và rò rỉ logic. Hiểu nền tảng, code sẽ sạch và dễ duy trì.">
   <meta property="og:locale" content="vi_vn">
   <meta property="og:type" content="article">
     <meta property="article:section" content="blog">
@@ -60,22 +59,20 @@ TL;DR Giải mã OOP &#43; JVM (JDK/JRE/JVM) — nắm rõ lifecycle và memory 
   <meta itemprop="name" content="Java cơ bản — Từ lớp đến JVM: hiểu để code không blind">
   <meta itemprop="description" content="Java cơ bản — Từ lớp đến JVM: hiểu để code không blind Slug: java-jvm-oop-co-ban
 Meta description: Giải mã OOP và JVM (JDK/JRE/JVM), hiểu stack vs heap, GC, primitive vs wrapper và immutable — nền tảng để bạn viết Java vững vàng, ít bị lỗi runtime.
-TL;DR Giải mã OOP &#43; JVM (JDK/JRE/JVM) — nắm rõ lifecycle và memory model (stack vs heap, GC) để tránh lỗi runtime và rò rỉ logic. Hiểu nền tảng, code sẽ sạch và dễ duy trì.">
+Giải mã OOP &#43; JVM (JDK/JRE/JVM) — nắm rõ lifecycle và memory model (stack vs heap, GC) để tránh lỗi runtime và rò rỉ logic. Hiểu nền tảng, code sẽ sạch và dễ duy trì.">
   <meta itemprop="datePublished" content="2025-09-22T00:00:00+00:00">
   <meta itemprop="dateModified" content="2025-09-22T00:00:00+00:00">
-  <meta itemprop="wordCount" content="1090">
+  <meta itemprop="wordCount" content="1314">
   <meta itemprop="keywords" content="Java,Jvm,Oop,Programming">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Java cơ bản — Từ lớp đến JVM: hiểu để code không blind">
   <meta name="twitter:description" content="Java cơ bản — Từ lớp đến JVM: hiểu để code không blind Slug: java-jvm-oop-co-ban
 Meta description: Giải mã OOP và JVM (JDK/JRE/JVM), hiểu stack vs heap, GC, primitive vs wrapper và immutable — nền tảng để bạn viết Java vững vàng, ít bị lỗi runtime.
-TL;DR Giải mã OOP &#43; JVM (JDK/JRE/JVM) — nắm rõ lifecycle và memory model (stack vs heap, GC) để tránh lỗi runtime và rò rỉ logic. Hiểu nền tảng, code sẽ sạch và dễ duy trì.">
+Giải mã OOP &#43; JVM (JDK/JRE/JVM) — nắm rõ lifecycle và memory model (stack vs heap, GC) để tránh lỗi runtime và rò rỉ logic. Hiểu nền tảng, code sẽ sạch và dễ duy trì.">
       <meta name="twitter:site" content="@https://twitter.com/taansfast">
 
-      
-    
 	
-  </head><body class="ma0 avenir bg-near-white production">
+  </head><body class="ma0 avenir bg-near-white development">
 
     
   
@@ -173,18 +170,17 @@ TL;DR Giải mã OOP &#43; JVM (JDK/JRE/JVM) — nắm rõ lifecycle và memory 
         
           <time datetime="2025-09-22T00:00:00Z">September 22, 2025</time> ·
         
-        <span>6 minutes read · 1090 words</span>
+        <span>7 minutes read · 1314 words</span>
       </div>
 
       <div class="article-content nested-copy-line-height lh-copy serif f4 nested-links dark-gray">
         <h1 id="java-cơ-bản--từ-lớp-đến-jvm-hiểu-để-code-không-blind">Java cơ bản — Từ lớp đến JVM: hiểu để code không blind</h1>
+<hr>
 <p><strong>Slug:</strong> <code>java-jvm-oop-co-ban</code></p>
 <p><strong>Meta description:</strong> Giải mã OOP và JVM (JDK/JRE/JVM), hiểu stack vs heap, GC, primitive vs wrapper và immutable — nền tảng để bạn viết Java vững vàng, ít bị lỗi runtime.</p>
-<hr>
-<h2 id="tldr">TL;DR</h2>
 <p>Giải mã OOP + JVM (JDK/JRE/JVM) — nắm rõ lifecycle và memory model (stack vs heap, GC) để tránh lỗi runtime và rò rỉ logic. Hiểu nền tảng, code sẽ sạch và dễ duy trì.</p>
 <hr>
-<h2 id="1-mở-bài--chuyện-tủ-vs-bàn-nói-như-người-thật">1. Mở bài — chuyện tủ vs bàn (nói như người thật)</h2>
+<h2 id="1-mở-bài--chuyện-tủ-vs-bàn">1. Mở bài — chuyện tủ vs bàn</h2>
 <p>Hồi xưa mình từng để quyển sách lên <strong>bàn</strong> rồi đi làm — mấy phút sau quay lại vẫn nguyên đó. Bàn là <em>heap</em>: chỗ chứa đồ lâu dài. Còn <strong>tủ</strong> thì như <em>stack</em>: mỗi ngăn chứa một thứ khi cần, đóng nắp là hết chuyện — method vào có, ra thì gọn. Khi code Java, nếu bạn nhầm lẫn giữa hai chỗ này, lúc debug bạn sẽ thấy mình như đang mò trong đêm: mất thời gian, căng thẳng, và đôi khi làm hỏng logic.</p>
 <p>Mục tiêu bài này: dắt bạn đi từ class/object đến JVM, hiểu memory model để bạn không code kiểu &ldquo;đại bàng bay qua&rdquo; nữa — mà là kẻ gấp áo chuẩn, chậm mà chắc.</p>
 <hr>
@@ -217,6 +213,8 @@ TL;DR Giải mã OOP &#43; JVM (JDK/JRE/JVM) — nắm rõ lifecycle và memory 
 </span></span><span style="display:flex;"><span>    }
 </span></span><span style="display:flex;"><span>}
 </span></span></code></pre></div><p><strong>Ghi nhớ:</strong> <code>interface</code> và <code>abstract class</code> giúp tách giao diện và cài đặt. Polymorphism (upcasting) giúp code mở rộng dễ dàng.</p>
+<h3 id="diagram-class-relationships">Diagram class relationships</h3>
+<p><img src="/images/hinh12.png" alt="Ảnh của tui"></p>
 <hr>
 <h2 id="3-jdk-vs-jre-vs-jvm--lifecycle-chương-trình-java">3. JDK vs JRE vs JVM + lifecycle chương trình Java</h2>
 <ul>
@@ -230,6 +228,10 @@ TL;DR Giải mã OOP &#43; JVM (JDK/JRE/JVM) — nắm rõ lifecycle và memory 
 <li>JVM load class → verify → execute bằng interpreter/JIT</li>
 <li>JVM quản lý memory, GC thu dọn heap khi cần</li>
 </ol>
+<p><strong>Mối quan hệ giữa JDK, JRE và JVM</strong>
+<img src="/images/hinh8.png" alt="Ảnh của tui"></p>
+<h3 id="diagram-jvm-lifecycle">Diagram JVM lifecycle</h3>
+<p><img src="/images/hinh13.png" alt="Ảnh của tui"></p>
 <hr>
 <h2 id="4-memory-model-stack-vs-heap-garbage-collector-gc">4. Memory model: Stack vs Heap, Garbage Collector (GC)</h2>
 <ul>
@@ -238,25 +240,37 @@ TL;DR Giải mã OOP &#43; JVM (JDK/JRE/JVM) — nắm rõ lifecycle và memory 
 </ul>
 <p><strong>GC không phải là phép màu.</strong> Rò rỉ memory trong Java thường do giữ reference vô tận (ví dụ <code>static List</code> lưu object cũ). Hiểu vòng đời object và cách GC hoạt động (generational: young/old) giúp bạn thiết kế và tối ưu.</p>
 <p><strong>Tip thực chiến:</strong> dùng <code>try-with-resources</code> cho tài nguyên IO; tránh giữ collection static chứa object lớn; cân nhắc <code>WeakHashMap</code> hoặc cơ chế eviction khi cần cache.</p>
-<p>ASCII Diagram (đơn giản):</p>
-<pre tabindex="0"><code>+---------------------------+
-|       Java Program        |
-+---------------------------+
-          |
-   compile (.class)
-          |
-+---------------------------+
-|          JVM              |
-| +-------+    +----------+ |
-| | Stack |    |   Heap   | |
-| |(frames)|   |(objects) | |
-| +-------+    +----------+ |
-|     ^             ^       |
-|     |             |       |
-|   method        GC thread  |
-+---------------------------+
-  (JIT, ClassLoader, GC)
-</code></pre><hr>
+<p><strong>Stack frame, heap generations: young, old</strong>
+<img src="/images/hinh9.png" alt="Ảnh của tui"></p>
+<p><strong>Cách GC hoạt động</strong>
+<img src="/images/hinh10.png" alt="Ảnh của tui"></p>
+<h3 id="diagram-memory-model-chi-tiết">Diagram Memory Model chi tiết</h3>
+<p><img src="/images/hinh14.png" alt="Ảnh của tui"></p>
+<h3 id="ví-dụ-memory-leak-thực-tếs">Ví dụ memory leak thực tếs</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">MemoryLeakExample</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">private</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">final</span> List<span style="color:#f92672">&lt;</span><span style="color:#66d9ef">byte</span><span style="color:#f92672">[]&gt;</span> LEAK_LIST <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> ArrayList<span style="color:#f92672">&lt;&gt;</span>();
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">processData</span>(<span style="color:#66d9ef">byte</span><span style="color:#f92672">[]</span> data) {
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e">// Quên không xóa khỏi list → memory leak</span>
+</span></span><span style="display:flex;"><span>        LEAK_LIST.<span style="color:#a6e22e">add</span>(data);
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e">// Giải pháp: cần có cơ chế evict hoặc clear định kỳ</span>
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h3 id="ví-dụ-try-with-resources">Ví dụ try-with-resources</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">ResourceManagement</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">readFile</span>(String path) {
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e">// Tự động đóng resource, tránh leak</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">try</span> (BufferedReader reader <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> BufferedReader(<span style="color:#66d9ef">new</span> FileReader(path))) {
+</span></span><span style="display:flex;"><span>            String line;
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">while</span> ((line <span style="color:#f92672">=</span> reader.<span style="color:#a6e22e">readLine</span>()) <span style="color:#f92672">!=</span> <span style="color:#66d9ef">null</span>) {
+</span></span><span style="display:flex;"><span>                System.<span style="color:#a6e22e">out</span>.<span style="color:#a6e22e">println</span>(line);
+</span></span><span style="display:flex;"><span>            }
+</span></span><span style="display:flex;"><span>        } <span style="color:#66d9ef">catch</span> (IOException e) {
+</span></span><span style="display:flex;"><span>            e.<span style="color:#a6e22e">printStackTrace</span>();
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><hr>
 <h2 id="5-primitive-vs-wrapper-final-vs-immutable--khi-nào-dùng-gì">5. Primitive vs Wrapper, final vs Immutable — khi nào dùng gì</h2>
 <ul>
 <li><strong>Primitive</strong> (<code>int</code>, <code>long</code>, <code>boolean</code>) nhanh, không null — dùng cho counters, loops.</li>
@@ -273,6 +287,31 @@ TL;DR Giải mã OOP &#43; JVM (JDK/JRE/JVM) — nắm rõ lifecycle và memory 
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>Integer n <span style="color:#f92672">=</span> <span style="color:#66d9ef">null</span>;
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">int</span> m <span style="color:#f92672">=</span> n; <span style="color:#75715e">// NPE khi auto-unbox</span>
+</span></span></code></pre></div><p><strong>So sánh cách lưu trữ của primitive (trên stack) và wrapper (trên heap) và reference từ stack đến heap</strong>
+<img src="/images/hinh11.png" alt="Ảnh của tui"></p>
+<h3 id="diagram-primitive-vs-wrapper-memory">Diagram Primitive vs Wrapper Memory</h3>
+<p><img src="/images/hinh15.png" alt="Ảnh của tui"></p>
+<h3 id="performance-benchmark-thực-tế">Performance benchmark thực tế</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">PerformanceTest</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span>(String<span style="color:#f92672">[]</span> args) {
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e">// Primitive version - nhanh hơn</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">long</span> start <span style="color:#f92672">=</span> System.<span style="color:#a6e22e">nanoTime</span>();
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">int</span> sum <span style="color:#f92672">=</span> 0;
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">for</span> (<span style="color:#66d9ef">int</span> i <span style="color:#f92672">=</span> 0; i <span style="color:#f92672">&lt;</span> 1_000_000; i<span style="color:#f92672">++</span>) {
+</span></span><span style="display:flex;"><span>            sum <span style="color:#f92672">+=</span> i;  <span style="color:#75715e">// No boxing</span>
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">long</span> primitiveTime <span style="color:#f92672">=</span> System.<span style="color:#a6e22e">nanoTime</span>() <span style="color:#f92672">-</span> start;
+</span></span><span style="display:flex;"><span>        
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e">// Wrapper version - chậm hơn do autoboxing  </span>
+</span></span><span style="display:flex;"><span>        Integer sumWrapper <span style="color:#f92672">=</span> 0;
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">for</span> (<span style="color:#66d9ef">int</span> i <span style="color:#f92672">=</span> 0; i <span style="color:#f92672">&lt;</span> 1_000_000; i<span style="color:#f92672">++</span>) {
+</span></span><span style="display:flex;"><span>            sumWrapper <span style="color:#f92672">+=</span> i;  <span style="color:#75715e">// Autoboxing overhead</span>
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">long</span> wrapperTime <span style="color:#f92672">=</span> System.<span style="color:#a6e22e">nanoTime</span>() <span style="color:#f92672">-</span> start <span style="color:#f92672">-</span> primitiveTime;
+</span></span><span style="display:flex;"><span>        
+</span></span><span style="display:flex;"><span>        System.<span style="color:#a6e22e">out</span>.<span style="color:#a6e22e">printf</span>(<span style="color:#e6db74">&#34;Primitive: %d ns, Wrapper: %d ns%n&#34;</span>, primitiveTime, wrapperTime);
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>}
 </span></span></code></pre></div><ul>
 <li><strong>final</strong>: khóa reference không thể gán lại, nhưng object vẫn mutable nếu class cho phép.</li>
 <li><strong>Immutable</strong>: muốn class bất biến — dùng <code>private final</code> fields, không export setter, defensive copy arrays/collections.</li>
@@ -285,7 +324,9 @@ TL;DR Giải mã OOP &#43; JVM (JDK/JRE/JVM) — nắm rõ lifecycle và memory 
 </span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">int</span> <span style="color:#a6e22e">getX</span>() { <span style="color:#66d9ef">return</span> x; }
 </span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">int</span> <span style="color:#a6e22e">getY</span>() { <span style="color:#66d9ef">return</span> y; }
 </span></span><span style="display:flex;"><span>}
-</span></span></code></pre></div><p>Immutable = an toàn hơn khi đa luồng và dễ reason.</p>
+</span></span></code></pre></div><h3 id="diagram-immutable-vs-mutable">Diagram Immutable vs Mutable</h3>
+<p><img src="/images/hinh16.png" alt="Ảnh của tui"></p>
+<p>Immutable = an toàn hơn khi đa luồng và dễ reason.</p>
 <hr>
 <h2 id="6-checklist-trước-khi-push-code-người-truyền-thống-làm-đúng-từng-bước">6. Checklist trước khi push code (người truyền thống, làm đúng từng bước)</h2>
 <ul>
@@ -295,11 +336,14 @@ TL;DR Giải mã OOP &#43; JVM (JDK/JRE/JVM) — nắm rõ lifecycle và memory 
 <li><input disabled="" type="checkbox"> Dùng <code>try-with-resources</code> cho IO</li>
 <li><input disabled="" type="checkbox"> Viết unit test cho edge cases (null, empty, overflow)</li>
 <li><input disabled="" type="checkbox"> Ưu tiên immutable objects khi liên quan concurrency</li>
+<li><input disabled="" type="checkbox"> Kiểm tra autoboxing/unboxing trong vòng lặp lớn</li>
+<li><input disabled="" type="checkbox"> Verify resource cleanup (file, socket, connection)</li>
 </ul>
 <hr>
 <h2 id="faq-ngắn">FAQ ngắn</h2>
 <p><strong>Q1:</strong> JVM có xử lý memory leak không?
 <strong>A1:</strong> GC dọn object không còn tham chiếu; nhưng nếu reference còn tồn tại (ví dụ cache không evict) =&gt; leak vẫn xảy ra.</p>
+<p><img src="/images/hinh17.png" alt="Ảnh của tui"></p>
 <p><strong>Q2:</strong> Dùng <code>int</code> hay <code>Integer</code> trong collection?
 <strong>A2:</strong> Collection cần object → <code>Integer</code>. Nếu performance cần, dùng primitive-specialized collections (ví dụ <code>TIntArrayList</code> từ Trove) hoặc stream primitives.</p>
 <p><strong>Q3:</strong> <code>final</code> có làm object immutable không?
@@ -315,8 +359,13 @@ TL;DR Giải mã OOP &#43; JVM (JDK/JRE/JVM) — nắm rõ lifecycle và memory 
          └─ com/example/jumpstart/
             ├─ Main.java
             ├─ oop/Animal.java
-            ├─ examples/AutoboxingPitfall.java
-            └─ immutables/Point.java
+            ├─ examples/
+            │   ├─ AutoboxingPitfall.java
+            │   ├─ MemoryLeakExample.java
+            │   └─ PerformanceTest.java
+            └─ immutables/
+                ├─ Point.java
+                └─ ResourceManagement.java
 </code></pre><h3 id="pomxml-maven-minimal">pom.xml (Maven minimal)</h3>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-xml" data-lang="xml"><span style="display:flex;"><span><span style="color:#f92672">&lt;project</span> <span style="color:#a6e22e">xmlns=</span><span style="color:#e6db74">&#34;http://maven.apache.org/POM/4.0.0&#34;</span>
 </span></span><span style="display:flex;"><span>         <span style="color:#a6e22e">xmlns:xsi=</span><span style="color:#e6db74">&#34;http://www.w3.org/2001/XMLSchema-instance&#34;</span>
@@ -330,30 +379,34 @@ TL;DR Giải mã OOP &#43; JVM (JDK/JRE/JVM) — nắm rõ lifecycle và memory 
 </span></span><span style="display:flex;"><span>        <span style="color:#f92672">&lt;maven.compiler.target&gt;</span>17<span style="color:#f92672">&lt;/maven.compiler.target&gt;</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#f92672">&lt;/properties&gt;</span>
 </span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;/project&gt;</span>
-</span></span></code></pre></div><h3 id="readmemd-tóm-tắt">README.md (tóm tắt)</h3>
+</span></span></code></pre></div><h3 id="readmemd-cập-nhật">README.md (cập nhật)</h3>
 <pre tabindex="0"><code># java-jumpstart
 
 Bài tập minh họa cho bài viết &#34;Java cơ bản — Từ lớp đến JVM&#34;.
 
 ## Chạy
-</code></pre><p>mvn compile exec:java -Dexec.mainClass=&ldquo;com.example.jumpstart.Main&rdquo;</p>
-<pre tabindex="0"><code>
-Các file demo ở `src/main/java/com/example/jumpstart`.
-</code></pre><hr>
-<h2 id="7-kế-tiếp-gợi-ý-nội-dung-hậu-bài">7. Kế tiếp (gợi ý nội dung hậu bài)</h2>
+```bash
+mvn compile exec:java -Dexec.mainClass=&#34;com.example.jumpstart.Main&#34;
+</code></pre><h2 id="các-ví-dụ-bao-gồm">Các ví dụ bao gồm:</h2>
 <ul>
-<li>Bước tiếp theo: &ldquo;JavaScript ES6+ bạn phải biết&rdquo; để so sánh mô hình event-loop vs JVM threading.</li>
-<li>Hoặc mình có thể tạo repo zip và upload sẵn file cấu trúc — bạn muốn zip luôn không?</li>
+<li>OOP với inheritance/polymorphism</li>
+<li>Autoboxing pitfalls và performance test</li>
+<li>Immutable objects</li>
+<li>Resource management với try-with-resources</li>
+<li>Memory leak examples</li>
 </ul>
+<p>Các file demo ở <code>src/main/java/com/example/jumpstart</code>.</p>
 <hr>
-<p><em>Phong cách:</em> mình giữ vừa hài hước, vừa truyền thống: &ldquo;Học kỹ căn bản, rồi bay cao&rdquo; — chậm mà chắc.</p>
+<h1 id="kết-luận">Kết luận</h1>
+<p>Hiểu JVM và memory model không phải là &ldquo;cao siêu&rdquo; — mà là nền tảng để bạn viết code chất lượng hơn, ít bug hơn. Khi biết object sống ở đâu, GC hoạt động thế nào, bạn sẽ tự tin hơn trong việc thiết kế ứng dụng và xử lý vấn đề performance.</p>
+<p><strong>Code không blind = hiểu từ bytecode đến runtime.</strong> Chúc bạn code vui! 🚀</p>
+<p><em>📚 Bài tiếp theo: &ldquo;JavaScript hiện đại — ES6+ bạn phải biết (let/const, arrow, async/await)&rdquo;</em></p>
 <hr>
-<p><em>Nếu bạn muốn, mình có thể xuất file ZIP của <code>java-jumpstart</code> để bạn tải về hoặc tạo PR skeleton cho GitHub — nói 1 câu: <em>&ldquo;Zip đi&rdquo;</em> và mình làm ngay.</em></p>
 <h2 class="f3 fw6 mb3">Care to comment</h2>
   <script src="https://utteranc.es/client.js"
         repo="Fast-9999/Fast-9999.github.io"
         issue-term="pathname"
-        theme="preferred-color-scheme"
+        theme="github-light"
         crossorigin="anonymous"
         async>
 </script>
@@ -404,6 +457,10 @@ Các file demo ở `src/main/java/com/example/jumpstart`.
             
           
             
+              <li class="mb3"><a href="/blog/bai-viet-3/" class="no-underline dark-gray hover-dark-blue">JavaScript hiện đại — ES6&#43; bạn phải biết (let/const, arrow, async/await)</a></li>
+            
+          
+            
               <li class="mb3"><a href="/blog/bai-viet-2/" class="no-underline dark-gray hover-dark-blue">So sánh Java và JavaScript – Tưởng giống mà khác xa</a></li>
             
           
@@ -422,6 +479,10 @@ Các file demo ở `src/main/java/com/example/jumpstart`.
 	   
 	     <li  class="mb2">
           <a href="/blog/bai-viet-2/">So sánh Java và JavaScript – Tưởng giống mà khác xa</a>
+        </li>
+	    
+	     <li  class="mb2">
+          <a href="/blog/bai-viet-3/">JavaScript hiện đại — ES6&#43; bạn phải biết (let/const, arrow, async/await)</a>
         </li>
 	    
     </ul>
@@ -685,7 +746,7 @@ body {
 
       
       <div class="w-100 w-30-l mb4 mb0-l">
-        <a href="https://taansfast.com/" class="link white hover-light-gray dib footer-focus" aria-label="TaansFast - Blog Lập Trình Mạng - Trang chủ" title="Trang chủ">
+        <a href="http://localhost:1313/" class="link white hover-light-gray dib footer-focus" aria-label="TaansFast - Blog Lập Trình Mạng - Trang chủ" title="Trang chủ">
           <h2 class="f3 fw7 tracked-tight mv0">TaansFast - Blog Lập Trình Mạng</h2>
         </a>
 

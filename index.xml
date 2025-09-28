@@ -2,38 +2,45 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Blog Lập Trình Mạng on TaansFast - Blog Lập Trình Mạng</title>
-    <link>https://taansfast.com/</link>
+    <link>http://localhost:1313/</link>
     <description>Recent content in Blog Lập Trình Mạng on TaansFast - Blog Lập Trình Mạng</description>
     <generator>Hugo</generator>
     <language>vi-vn</language>
     <lastBuildDate>Mon, 22 Sep 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://taansfast.com/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Java cơ bản — Từ lớp đến JVM: hiểu để code không blind</title>
-      <link>https://taansfast.com/blog/bai-viet-1/</link>
+      <link>http://localhost:1313/blog/bai-viet-1/</link>
       <pubDate>Mon, 22 Sep 2025 00:00:00 +0000</pubDate>
-      <guid>https://taansfast.com/blog/bai-viet-1/</guid>
-      <description>&lt;h1 id=&#34;java-cơ-bản--từ-lớp-đến-jvm-hiểu-để-code-không-blind&#34;&gt;Java cơ bản — Từ lớp đến JVM: hiểu để code không blind&lt;/h1&gt;&#xA;&lt;p&gt;&lt;strong&gt;Slug:&lt;/strong&gt; &lt;code&gt;java-jvm-oop-co-ban&lt;/code&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Meta description:&lt;/strong&gt; Giải mã OOP và JVM (JDK/JRE/JVM), hiểu stack vs heap, GC, primitive vs wrapper và immutable — nền tảng để bạn viết Java vững vàng, ít bị lỗi runtime.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;tldr&#34;&gt;TL;DR&lt;/h2&gt;&#xA;&lt;p&gt;Giải mã OOP + JVM (JDK/JRE/JVM) — nắm rõ lifecycle và memory model (stack vs heap, GC) để tránh lỗi runtime và rò rỉ logic. Hiểu nền tảng, code sẽ sạch và dễ duy trì.&lt;/p&gt;</description>
+      <guid>http://localhost:1313/blog/bai-viet-1/</guid>
+      <description>&lt;h1 id=&#34;java-cơ-bản--từ-lớp-đến-jvm-hiểu-để-code-không-blind&#34;&gt;Java cơ bản — Từ lớp đến JVM: hiểu để code không blind&lt;/h1&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;&lt;strong&gt;Slug:&lt;/strong&gt; &lt;code&gt;java-jvm-oop-co-ban&lt;/code&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Meta description:&lt;/strong&gt; Giải mã OOP và JVM (JDK/JRE/JVM), hiểu stack vs heap, GC, primitive vs wrapper và immutable — nền tảng để bạn viết Java vững vàng, ít bị lỗi runtime.&lt;/p&gt;&#xA;&lt;p&gt;Giải mã OOP + JVM (JDK/JRE/JVM) — nắm rõ lifecycle và memory model (stack vs heap, GC) để tránh lỗi runtime và rò rỉ logic. Hiểu nền tảng, code sẽ sạch và dễ duy trì.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>JavaScript hiện đại — ES6&#43; bạn phải biết (let/const, arrow, async/await)</title>
+      <link>http://localhost:1313/blog/bai-viet-3/</link>
+      <pubDate>Mon, 22 Sep 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/blog/bai-viet-3/</guid>
+      <description></description>
     </item>
     <item>
       <title>Contact</title>
-      <link>https://taansfast.com/contact/</link>
+      <link>http://localhost:1313/contact/</link>
       <pubDate>Sun, 21 Sep 2025 00:00:00 +0000</pubDate>
-      <guid>https://taansfast.com/contact/</guid>
+      <guid>http://localhost:1313/contact/</guid>
       <description></description>
     </item>
     <item>
       <title>So sánh Java và JavaScript – Tưởng giống mà khác xa</title>
-      <link>https://taansfast.com/blog/bai-viet-2/</link>
+      <link>http://localhost:1313/blog/bai-viet-2/</link>
       <pubDate>Fri, 19 Sep 2025 00:00:00 +0000</pubDate>
-      <guid>https://taansfast.com/blog/bai-viet-2/</guid>
+      <guid>http://localhost:1313/blog/bai-viet-2/</guid>
       <description>&lt;p&gt;&lt;strong&gt;So sánh Java và JavaScript (2025)&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;Nguồn gốc, môi trường chạy, cú pháp, ứng dụng thực tế và gợi ý học tập.&lt;br&gt;&#xA;Kèm code snippets và bảng so sánh nhanh.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Giới thiệu</title>
-      <link>https://taansfast.com/about/</link>
+      <link>http://localhost:1313/about/</link>
       <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>https://taansfast.com/about/</guid>
+      <guid>http://localhost:1313/about/</guid>
       <description>&lt;h2 id=&#34;xin-chào-tôi-là-taansfast-&#34;&gt;Xin chào! Tôi là TaansFast 👋&lt;/h2&gt;&#xA;&lt;p&gt;Tôi là một &lt;strong&gt;Network Programming Specialist&lt;/strong&gt; với hơn 5 năm kinh nghiệm trong việc phát triển các hệ thống mạng phức tạp và ứng dụng enterprise. Đam mê của tôi nằm ở việc tạo ra những giải pháp công nghệ hiệu quả và chia sẻ kiến thức với cộng đồng developer Việt Nam.&lt;/p&gt;&#xA;&lt;h3 id=&#34;hành-trình-của-tôi&#34;&gt;Hành trình của tôi&lt;/h3&gt;&#xA;&lt;p&gt;Bắt đầu từ một sinh viên IT với niềm đam mê về networking, tôi đã trải qua hành trình từ junior developer đến vị trí senior hiện tại. Qua những năm làm việc, tôi đã có cơ hội tham gia vào nhiều dự án thú vị, từ các startup nhỏ đến các tập đoàn lớn.&lt;/p&gt;</description>
     </item>
   </channel>
