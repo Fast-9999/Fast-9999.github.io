@@ -6,7 +6,7 @@
   
   <url>
     <loc>https://taansfast.com/tags/arrow-function/</loc>
-    <lastmod>2025-09-22T00:00:00+00:00</lastmod>
+    <lastmod>2025-09-28T00:00:00+00:00</lastmod>
     
     
   </url>
@@ -15,7 +15,7 @@
   
   <url>
     <loc>https://taansfast.com/tags/async/</loc>
-    <lastmod>2025-09-22T00:00:00+00:00</lastmod>
+    <lastmod>2025-09-28T00:00:00+00:00</lastmod>
     
     
   </url>
@@ -24,16 +24,7 @@
   
   <url>
     <loc>https://taansfast.com/tags/await/</loc>
-    <lastmod>2025-09-22T00:00:00+00:00</lastmod>
-    
-    
-  </url>
-  
-  
-  
-  <url>
-    <loc>https://taansfast.com/categories/backend/</loc>
-    <lastmod>2025-09-22T00:00:00+00:00</lastmod>
+    <lastmod>2025-09-28T00:00:00+00:00</lastmod>
     
     
   </url>
@@ -42,7 +33,7 @@
   
   <url>
     <loc>https://taansfast.com/blog/</loc>
-    <lastmod>2025-09-22T00:00:00+00:00</lastmod>
+    <lastmod>2025-09-28T00:00:00+00:00</lastmod>
     
     
   </url>
@@ -51,7 +42,7 @@
   
   <url>
     <loc>https://taansfast.com/</loc>
-    <lastmod>2025-09-22T00:00:00+00:00</lastmod>
+    <lastmod>2025-09-28T00:00:00+00:00</lastmod>
     
     
   </url>
@@ -60,7 +51,7 @@
   
   <url>
     <loc>https://taansfast.com/categories/</loc>
-    <lastmod>2025-09-22T00:00:00+00:00</lastmod>
+    <lastmod>2025-09-28T00:00:00+00:00</lastmod>
     
     
   </url>
@@ -69,6 +60,78 @@
   
   <url>
     <loc>https://taansfast.com/tags/es6/</loc>
+    <lastmod>2025-09-28T00:00:00+00:00</lastmod>
+    
+    
+  </url>
+  
+  
+  
+  <url>
+    <loc>https://taansfast.com/categories/javascript/</loc>
+    <lastmod>2025-09-28T00:00:00+00:00</lastmod>
+    
+    
+  </url>
+  
+  
+  
+  <url>
+    <loc>https://taansfast.com/tags/javascript/</loc>
+    <lastmod>2025-09-28T00:00:00+00:00</lastmod>
+    
+    
+  </url>
+  
+  
+  
+  <url>
+    <loc>https://taansfast.com/blog/bai-viet-3/</loc>
+    <lastmod>2025-09-28T00:00:00+00:00</lastmod>
+    
+    
+  </url>
+  
+  
+  
+  <url>
+    <loc>https://taansfast.com/tags/let-const/</loc>
+    <lastmod>2025-09-28T00:00:00+00:00</lastmod>
+    
+    
+  </url>
+  
+  
+  
+  <url>
+    <loc>https://taansfast.com/tags/programming/</loc>
+    <lastmod>2025-09-28T00:00:00+00:00</lastmod>
+    
+    
+  </url>
+  
+  
+  
+  <url>
+    <loc>https://taansfast.com/tags/</loc>
+    <lastmod>2025-09-28T00:00:00+00:00</lastmod>
+    
+    
+  </url>
+  
+  
+  
+  <url>
+    <loc>https://taansfast.com/categories/tutorial/</loc>
+    <lastmod>2025-09-28T00:00:00+00:00</lastmod>
+    
+    
+  </url>
+  
+  
+  
+  <url>
+    <loc>https://taansfast.com/categories/backend/</loc>
     <lastmod>2025-09-22T00:00:00+00:00</lastmod>
     
     
@@ -104,33 +167,6 @@
   
   
   <url>
-    <loc>https://taansfast.com/categories/javascript/</loc>
-    <lastmod>2025-09-22T00:00:00+00:00</lastmod>
-    
-    
-  </url>
-  
-  
-  
-  <url>
-    <loc>https://taansfast.com/tags/javascript/</loc>
-    <lastmod>2025-09-22T00:00:00+00:00</lastmod>
-    
-    
-  </url>
-  
-  
-  
-  <url>
-    <loc>https://taansfast.com/blog/bai-viet-3/</loc>
-    <lastmod>2025-09-22T00:00:00+00:00</lastmod>
-    
-    
-  </url>
-  
-  
-  
-  <url>
     <loc>https://taansfast.com/tags/jvm/</loc>
     <lastmod>2025-09-22T00:00:00+00:00</lastmod>
     
@@ -140,43 +176,7 @@
   
   
   <url>
-    <loc>https://taansfast.com/tags/let-const/</loc>
-    <lastmod>2025-09-22T00:00:00+00:00</lastmod>
-    
-    
-  </url>
-  
-  
-  
-  <url>
     <loc>https://taansfast.com/tags/oop/</loc>
-    <lastmod>2025-09-22T00:00:00+00:00</lastmod>
-    
-    
-  </url>
-  
-  
-  
-  <url>
-    <loc>https://taansfast.com/tags/programming/</loc>
-    <lastmod>2025-09-22T00:00:00+00:00</lastmod>
-    
-    
-  </url>
-  
-  
-  
-  <url>
-    <loc>https://taansfast.com/tags/</loc>
-    <lastmod>2025-09-22T00:00:00+00:00</lastmod>
-    
-    
-  </url>
-  
-  
-  
-  <url>
-    <loc>https://taansfast.com/categories/tutorial/</loc>
     <lastmod>2025-09-22T00:00:00+00:00</lastmod>
     
     
