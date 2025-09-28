@@ -2,87 +2,87 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on TaansFast - Blog Lập Trình Mạng</title>
-    <link>http://localhost:1313/tags/</link>
+    <link>https://taansfast.com/tags/</link>
     <description>Recent content in Tags on TaansFast - Blog Lập Trình Mạng</description>
     <generator>Hugo</generator>
     <language>vi-vn</language>
     <lastBuildDate>Mon, 22 Sep 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://taansfast.com/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Arrow-Function</title>
-      <link>http://localhost:1313/tags/arrow-function/</link>
+      <link>https://taansfast.com/tags/arrow-function/</link>
       <pubDate>Mon, 22 Sep 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/arrow-function/</guid>
+      <guid>https://taansfast.com/tags/arrow-function/</guid>
       <description></description>
     </item>
     <item>
       <title>Async</title>
-      <link>http://localhost:1313/tags/async/</link>
+      <link>https://taansfast.com/tags/async/</link>
       <pubDate>Mon, 22 Sep 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/async/</guid>
+      <guid>https://taansfast.com/tags/async/</guid>
       <description></description>
     </item>
     <item>
       <title>Await</title>
-      <link>http://localhost:1313/tags/await/</link>
+      <link>https://taansfast.com/tags/await/</link>
       <pubDate>Mon, 22 Sep 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/await/</guid>
+      <guid>https://taansfast.com/tags/await/</guid>
       <description></description>
     </item>
     <item>
       <title>Es6</title>
-      <link>http://localhost:1313/tags/es6/</link>
+      <link>https://taansfast.com/tags/es6/</link>
       <pubDate>Mon, 22 Sep 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/es6/</guid>
+      <guid>https://taansfast.com/tags/es6/</guid>
       <description></description>
     </item>
     <item>
       <title>Java</title>
-      <link>http://localhost:1313/tags/java/</link>
+      <link>https://taansfast.com/tags/java/</link>
       <pubDate>Mon, 22 Sep 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/java/</guid>
+      <guid>https://taansfast.com/tags/java/</guid>
       <description></description>
     </item>
     <item>
       <title>Javascript</title>
-      <link>http://localhost:1313/tags/javascript/</link>
+      <link>https://taansfast.com/tags/javascript/</link>
       <pubDate>Mon, 22 Sep 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/javascript/</guid>
+      <guid>https://taansfast.com/tags/javascript/</guid>
       <description></description>
     </item>
     <item>
       <title>Jvm</title>
-      <link>http://localhost:1313/tags/jvm/</link>
+      <link>https://taansfast.com/tags/jvm/</link>
       <pubDate>Mon, 22 Sep 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/jvm/</guid>
+      <guid>https://taansfast.com/tags/jvm/</guid>
       <description></description>
     </item>
     <item>
       <title>Let-Const</title>
-      <link>http://localhost:1313/tags/let-const/</link>
+      <link>https://taansfast.com/tags/let-const/</link>
       <pubDate>Mon, 22 Sep 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/let-const/</guid>
+      <guid>https://taansfast.com/tags/let-const/</guid>
       <description></description>
     </item>
     <item>
       <title>Oop</title>
-      <link>http://localhost:1313/tags/oop/</link>
+      <link>https://taansfast.com/tags/oop/</link>
       <pubDate>Mon, 22 Sep 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/oop/</guid>
+      <guid>https://taansfast.com/tags/oop/</guid>
       <description></description>
     </item>
     <item>
       <title>Programming</title>
-      <link>http://localhost:1313/tags/programming/</link>
+      <link>https://taansfast.com/tags/programming/</link>
       <pubDate>Mon, 22 Sep 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/programming/</guid>
+      <guid>https://taansfast.com/tags/programming/</guid>
       <description></description>
     </item>
     <item>
       <title>Comparison</title>
-      <link>http://localhost:1313/tags/comparison/</link>
+      <link>https://taansfast.com/tags/comparison/</link>
       <pubDate>Fri, 19 Sep 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/comparison/</guid>
+      <guid>https://taansfast.com/tags/comparison/</guid>
       <description></description>
     </item>
   </channel>
