@@ -251,7 +251,7 @@ Giải mã OOP &#43; JVM (JDK/JRE/JVM) — nắm rõ lifecycle và memory model 
 <h3 id="ví-dụ-memory-leak-thực-tếs">Ví dụ memory leak thực tếs</h3>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">MemoryLeakExample</span> {
 </span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">private</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">final</span> List<span style="color:#f92672">&lt;</span><span style="color:#66d9ef">byte</span><span style="color:#f92672">[]&gt;</span> LEAK_LIST <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> ArrayList<span style="color:#f92672">&lt;&gt;</span>();
-</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">processData</span>(<span style="color:#66d9ef">byte</span><span style="color:#f92672">[]</span> data) {
 </span></span><span style="display:flex;"><span>        <span style="color:#75715e">// Quên không xóa khỏi list → memory leak</span>
 </span></span><span style="display:flex;"><span>        LEAK_LIST.<span style="color:#a6e22e">add</span>(data);
@@ -303,14 +303,14 @@ Giải mã OOP &#43; JVM (JDK/JRE/JVM) — nắm rõ lifecycle và memory model 
 </span></span><span style="display:flex;"><span>            sum <span style="color:#f92672">+=</span> i;  <span style="color:#75715e">// No boxing</span>
 </span></span><span style="display:flex;"><span>        }
 </span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">long</span> primitiveTime <span style="color:#f92672">=</span> System.<span style="color:#a6e22e">nanoTime</span>() <span style="color:#f92672">-</span> start;
-</span></span><span style="display:flex;"><span>        
-</span></span><span style="display:flex;"><span>        <span style="color:#75715e">// Wrapper version - chậm hơn do autoboxing  </span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e">// Wrapper version - chậm hơn do autoboxing</span>
 </span></span><span style="display:flex;"><span>        Integer sumWrapper <span style="color:#f92672">=</span> 0;
 </span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">for</span> (<span style="color:#66d9ef">int</span> i <span style="color:#f92672">=</span> 0; i <span style="color:#f92672">&lt;</span> 1_000_000; i<span style="color:#f92672">++</span>) {
 </span></span><span style="display:flex;"><span>            sumWrapper <span style="color:#f92672">+=</span> i;  <span style="color:#75715e">// Autoboxing overhead</span>
 </span></span><span style="display:flex;"><span>        }
 </span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">long</span> wrapperTime <span style="color:#f92672">=</span> System.<span style="color:#a6e22e">nanoTime</span>() <span style="color:#f92672">-</span> start <span style="color:#f92672">-</span> primitiveTime;
-</span></span><span style="display:flex;"><span>        
+</span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>        System.<span style="color:#a6e22e">out</span>.<span style="color:#a6e22e">printf</span>(<span style="color:#e6db74">&#34;Primitive: %d ns, Wrapper: %d ns%n&#34;</span>, primitiveTime, wrapperTime);
 </span></span><span style="display:flex;"><span>    }
 </span></span><span style="display:flex;"><span>}
@@ -412,6 +412,7 @@ mvn compile exec:java -Dexec.mainClass=&#34;com.example.jumpstart.Main&#34;
         crossorigin="anonymous"
         async>
 </script>
+
       </div>
 
       

@@ -125,395 +125,891 @@
 
     <main class="pb7" role="main">
       
+
+<button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
+  <svg id="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+    stroke-linejoin="round">
+    <circle cx="12" cy="12" r="5"></circle>
+    <line x1="12" y1="1" x2="12" y2="3"></line>
+    <line x1="12" y1="21" x2="12" y2="23"></line>
+    <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+    <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+    <line x1="1" y1="12" x2="3" y2="12"></line>
+    <line x1="21" y1="12" x2="23" y2="12"></line>
+    <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+    <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+  </svg>
+  <svg id="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+    stroke-linejoin="round" style="display: none;">
+    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+  </svg>
+</button>
+
+<main class="pa3 pa4-l nested-copy-line-height content-wrapper">
+
   
-  <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
-    <svg id="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-      <circle cx="12" cy="12" r="5"></circle>
-      <line x1="12" y1="1" x2="12" y2="3"></line>
-      <line x1="12" y1="21" x2="12" y2="23"></line>
-      <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
-      <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
-      <line x1="1" y1="12" x2="3" y2="12"></line>
-      <line x1="21" y1="12" x2="23" y2="12"></line>
-      <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
-      <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
-    </svg>
-    <svg id="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display: none;">
-      <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
-    </svg>
-  </button>
-
-  <main class="pa3 pa4-l nested-copy-line-height content-wrapper">
-
-    
-    <section class="tc pv5 pv6-l bg-dark-gradient white br3 shadow-4 mb5">
-      <div class="mw7 center">
-        <h1 class="f1 fw7 mb3 animated-heading">Chào mừng bạn</h1>
-        <p class="f4 f5-ns lh-copy measure center">
-          Đây là blog cá nhân của tôi, nơi tôi chia sẻ kiến thức về 
-          <strong class="highlight-text">lập trình mạng</strong> và các chủ đề công nghệ khác.
-        </p>
-        
-        
-        <div class="mt4 mb4">
-          <div class="search-container">
-            <input type="text" id="search-input" placeholder="Tìm kiếm bài viết..." class="search-input">
-            <button id="search-btn" class="search-btn" aria-label="Tìm kiếm">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <circle cx="11" cy="11" r="8"></circle>
-                <path d="m21 21-4.35-4.35"></path>
-              </svg>
-            </button>
-          </div>
-          <div id="search-results" class="search-results" style="display: none;"></div>
-        </div>
-        
-        <div class="mt4">
-          <a href="#latest-posts" class="f5 no-underline dib white bg-animate bg-blue pv3 ph4 br2 grow shadow-hover">
-            Khám phá ngay
-          </a>
+  <section class="tc pv5 pv6-l bg-dark-gradient white br3 shadow-4 mb5 hero-section">
+    <div class="mw7 center">
+      
+      <div class="mb4">
+        <div class="social-proof-badges">
+          <span class="badge">🚀 1000+ độc giả</span>
+          <span class="badge">⭐ 4.9/5 đánh giá</span>
+          <span class="badge">📚 50+ bài viết</span>
         </div>
       </div>
-    </section>
 
-     
-    
-    <section id="latest-posts" class="mb5 mb6-l">
-      <div class="mw8 center">
-        <h2 class="tc f2 fw7 mb4 mb5-l section-title">Bài viết mới nhất</h2>
+      <h1 class="f1 fw7 mb3 animated-heading">Chào mừng bạn đến với Blog Lập Trình</h1>
+      <p class="f4 f5-ns lh-copy measure center mb4 hero-subtitle">
+        Nơi chia sẻ kiến thức sâu về
+        <strong class="highlight-text">lập trình mạng</strong>,
+        <strong class="highlight-text">công nghệ web</strong> và
+        <strong class="highlight-text">best practices</strong> từ thực tế.
+      </p>
 
-        <div class="grid grid-cols-1 grid-cols-2-m grid-cols-3-l gap-4">
-          
+      
+      <div class="value-props mb4">
+        <div class="value-prop">
+          <span class="value-icon">💡</span>
+          <span>Kiến thức thực tế</span>
+        </div>
+        <div class="value-prop">
+          <span class="value-icon">🎯</span>
+          <span>Hướng dẫn chi tiết</span>
+        </div>
+        <div class="value-prop">
+          <span class="value-icon">⚡</span>
+          <span>Cập nhật mới nhất</span>
+        </div>
+      </div>
+
+      
+
+      
+      <div class="cta-section">
+        <a href="#latest-posts" class="cta-button primary">
+          <span>Khám phá bài viết</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="m9 18 6-6-6-6" />
+          </svg>
+        </a>
+        <a href="/about/" class="cta-button secondary">
+          <span>Tìm hiểu thêm</span>
+        </a>
+      </div>
+
+      
+      <div class="newsletter-signup mt5">
+        <p class="f6 mb3">Đăng ký nhận bài viết mới qua email</p>
+        <div class="newsletter-form">
+          <input type="email" placeholder="Email của bạn..." class="newsletter-input">
+          <button class="newsletter-btn">Đăng ký</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+  <section class="mb5 mb6-l featured-post-section">
+    <div class="mw8 center">
+      <h2 class="tc f2 fw7 mb4 mb5-l section-title">Bài viết nổi bật</h2>
+      
+      
+      <div class="featured-post-card">
+        <div class="featured-post-content">
+          <div class="featured-post-meta">
+            <span class="featured-badge">⭐ Nổi bật</span>
+            <time datetime=" 2025-09-28" class="featured-date">
+              28 Sep 2025
+            </time>
+          </div>
+          <h3 class="featured-post-title">
+            <a href="https://taansfast.com/blog/bai-viet-3/" class="featured-post-link">JavaScript hiện đại — ES6&#43; bạn phải biết (let/const, arrow, async/await)</a>
+          </h3>
+          <p class="featured-post-excerpt">
             
-            <article class="post-card">
-              <a href="https://taansfast.com/blog/bai-viet-3/" class="db no-underline color-inherit post-link" aria-label="Đọc bài: JavaScript hiện đại — ES6&#43; bạn phải biết (let/const, arrow, async/await)">
-                <div class="bg-white br3 shadow-4 h-100 flex flex-column overflow-hidden transition-all">
+            
+            
+            
+            
+          </p>
+          <div class="featured-post-footer">
+            <div class="featured-post-tags">
+              
+              <span class="featured-tag">javascript</span>
+              
+              <span class="featured-tag">es6</span>
+              
+              <span class="featured-tag">async</span>
+              
+            </div>
+            <a href="https://taansfast.com/blog/bai-viet-3/" class="featured-read-more">
+              Đọc ngay →
+            </a>
+          </div>
+        </div>
+        <div class="featured-post-image">
+          
+          
+          <img src="https://www.infoworld.com/wp-content/uploads/2025/09/2263137-0-59682900-1757000713-shutterstock_1361674454-100939444-orig.jpg?quality=50&amp;strip=all" alt="JavaScript hiện đại — ES6&#43; bạn phải biết (let/const, arrow, async/await)" class="featured-img" loading="lazy" />
+          
+          
+        </div>
+      </div>
+      
+    </div>
+  </section>
 
-                  
-                  <div class="post-image-wrapper">
-                    
-                      
-                        <img src="https://static.vietnix.vn/wp-content/uploads/2021/07/client-script-javascript.webp" alt="JavaScript hiện đại — ES6&#43; bạn phải biết (let/const, arrow, async/await)" class="img-cover" loading="lazy" />
-                      
-                    
-                    <div class="post-overlay"></div>
-                  </div>
 
-                  <div class="pa3 pa4-l flex-auto">
-                    <h3 class="mt0 mb2 f4 f5-l fw6 post-title">JavaScript hiện đại — ES6&#43; bạn phải biết (let/const, arrow, async/await)</h3>
+  
+  <section class="mb5 mb6-l">
+    <div class="mw8 center">
+      <h2 class="tc f2 fw7 mb4 mb5-l section-title">Chủ đề nổi bật</h2>
+      <div class="featured-categories">
+        <div class="category-card card-hover interactive-element">
+          <div class="category-icon">☕</div>
+          <h3>Java & JVM</h3>
+          <p>Kiến thức cơ bản đến nâng cao về Java và JVM</p>
+          <a href="/categories/java/" class="category-link">Xem bài viết →</a>
+        </div>
+        <div class="category-card card-hover interactive-element">
+          <div class="category-icon">⚡</div>
+          <h3>JavaScript</h3>
+          <p>ES6+, React, Node.js và các framework hiện đại</p>
+          <a href="/categories/javascript/" class="category-link">Xem bài viết →</a>
+        </div>
+        <div class="category-card card-hover interactive-element">
+          <div class="category-icon">🌐</div>
+          <h3>Web Development</h3>
+          <p>HTML, CSS, responsive design và best practices</p>
+          <a href="/categories/tutorial/" class="category-link">Xem bài viết →</a>
+        </div>
+      </div>
+    </div>
+  </section>
 
-                    <div class="f6 mv1 mid-gray flex items-center" aria-hidden="false">
-                      <time datetime="2025-09-28" class="post-date">
-                        28 Sep 2025
-                      </time>
-                      <span class="mh2">•</span>
-                      <span class="post-reading-time">0 phút đọc</span>
-                    </div>
+  
+  <section class="mb5 mb6-l testimonials-section">
+    <div class="mw8 center">
+      <h2 class="tc f2 fw7 mb4 mb5-l section-title">Độc giả nói gì</h2>
+      <div class="testimonials-grid">
+        <div class="testimonial-card card-hover interactive-element">
+          <div class="testimonial-content">
+            <p>"Bài viết rất chi tiết và dễ hiểu. Mình đã học được nhiều kiến thức bổ ích về Java và JVM."</p>
+          </div>
+          <div class="testimonial-author">
+            <div class="author-avatar">👨‍💻</div>
+            <div class="author-info">
+              <h4>Nguyễn Văn A</h4>
+              <span>Software Developer</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card card-hover interactive-element">
+          <div class="testimonial-content">
+            <p>"So sánh Java vs JavaScript rất hay! Giúp mình hiểu rõ sự khác biệt giữa hai ngôn ngữ."</p>
+          </div>
+          <div class="testimonial-author">
+            <div class="author-avatar">👩‍💻</div>
+            <div class="author-info">
+              <h4>Trần Thị B</h4>
+              <span>Frontend Developer</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card card-hover interactive-element">
+          <div class="testimonial-content">
+            <p>"Blog có nhiều bài viết chất lượng, cập nhật kiến thức mới nhất. Rất hữu ích cho developer!"</p>
+          </div>
+          <div class="testimonial-author">
+            <div class="author-avatar">👨‍🎓</div>
+            <div class="author-info">
+              <h4>Lê Văn C</h4>
+              <span>Student</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-                    <p class="f6 lh-copy measure mb3 post-excerpt">
-                      
-                        
-                          
-                        
-                      
-                    </p>
-                  </div>
+  
+  <section id="latest-posts" class="mb5 mb6-l">
+    <div class="mw8 center">
+      <h2 class="tc f2 fw7 mb4 mb5-l section-title">Bài viết mới nhất</h2>
 
-                  <div class="pa3 pa4-l mt-auto">
-                    <span class="f6 link dim br2 ph3 pv2 dib white bg-dark-blue post-cta">Đọc tiếp →</span>
-                  </div>
+      <div class="grid grid-cols-1 grid-cols-2-m grid-cols-3-l gap-4">
+        
+        
+        <article class="post-card card-hover interactive-element">
+          <a href="https://taansfast.com/blog/bai-viet-3/" class="db no-underline color-inherit post-link"
+            aria-label="Đọc bài: JavaScript hiện đại — ES6&#43; bạn phải biết (let/const, arrow, async/await)">
+            <div class="bg-white br3 shadow-4 h-100 flex flex-column overflow-hidden transition-all">
 
+              
+              <div class="post-image-wrapper">
+                
+                
+                <img src="https://www.infoworld.com/wp-content/uploads/2025/09/2263137-0-59682900-1757000713-shutterstock_1361674454-100939444-orig.jpg?quality=50&amp;strip=all" alt="JavaScript hiện đại — ES6&#43; bạn phải biết (let/const, arrow, async/await)" class="img-cover" loading="lazy" />
+                
+                
+                <div class="post-overlay"></div>
+              </div>
+
+              <div class="pa3 pa4-l flex-auto">
+                <h3 class="mt0 mb2 f4 f5-l fw6 post-title">JavaScript hiện đại — ES6&#43; bạn phải biết (let/const, arrow, async/await)</h3>
+
+                <div class="f6 mv1 mid-gray flex items-center" aria-hidden="false">
+                  <time datetime=" 2025-09-28" class="post-date">
+                    28 Sep 2025
+                  </time>
+                  <span class="mh2">•</span>
+                  <span class="post-reading-time">0 phút đọc</span>
                 </div>
-              </a>
-            </article>
-          
-            
-            <article class="post-card">
-              <a href="https://taansfast.com/blog/bai-viet-1/" class="db no-underline color-inherit post-link" aria-label="Đọc bài: Java cơ bản — Từ lớp đến JVM: hiểu để code không blind">
-                <div class="bg-white br3 shadow-4 h-100 flex flex-column overflow-hidden transition-all">
 
+                <p class="f6 lh-copy measure mb3 post-excerpt">
                   
-                  <div class="post-image-wrapper">
-                    
-                      
-                        <img src="https://miro.medium.com/0*gtY-llyEbkeoS1Sp.png" alt="Java cơ bản — Từ lớp đến JVM: hiểu để code không blind" class="img-cover" loading="lazy" />
-                      
-                    
-                    <div class="post-overlay"></div>
-                  </div>
+                  
+                  
+                  
+                  
+                </p>
+              </div>
 
-                  <div class="pa3 pa4-l flex-auto">
-                    <h3 class="mt0 mb2 f4 f5-l fw6 post-title">Java cơ bản — Từ lớp đến JVM: hiểu để code không blind</h3>
+              <div class="pa3 pa4-l mt-auto">
+                <span class="f6 link dim br2 ph3 pv2 dib white bg-dark-blue post-cta">Đọc tiếp →</span>
+              </div>
 
-                    <div class="f6 mv1 mid-gray flex items-center" aria-hidden="false">
-                      <time datetime="2025-09-22" class="post-date">
-                        22 Sep 2025
-                      </time>
-                      <span class="mh2">•</span>
-                      <span class="post-reading-time">7 phút đọc</span>
-                    </div>
+            </div>
+          </a>
+        </article>
+        
+        
+        <article class="post-card card-hover interactive-element">
+          <a href="https://taansfast.com/blog/bai-viet-1/" class="db no-underline color-inherit post-link"
+            aria-label="Đọc bài: Java cơ bản — Từ lớp đến JVM: hiểu để code không blind">
+            <div class="bg-white br3 shadow-4 h-100 flex flex-column overflow-hidden transition-all">
 
-                    <p class="f6 lh-copy measure mb3 post-excerpt">
-                      
-                        Java cơ bản — Từ lớp đến JVM: hiểu để code không blind Slug: java-jvm-oop-co-ban
+              
+              <div class="post-image-wrapper">
+                
+                
+                <img src="https://miro.medium.com/0*gtY-llyEbkeoS1Sp.png" alt="Java cơ bản — Từ lớp đến JVM: hiểu để code không blind" class="img-cover" loading="lazy" />
+                
+                
+                <div class="post-overlay"></div>
+              </div>
+
+              <div class="pa3 pa4-l flex-auto">
+                <h3 class="mt0 mb2 f4 f5-l fw6 post-title">Java cơ bản — Từ lớp đến JVM: hiểu để code không blind</h3>
+
+                <div class="f6 mv1 mid-gray flex items-center" aria-hidden="false">
+                  <time datetime=" 2025-09-22" class="post-date">
+                    22 Sep 2025
+                  </time>
+                  <span class="mh2">•</span>
+                  <span class="post-reading-time">7 phút đọc</span>
+                </div>
+
+                <p class="f6 lh-copy measure mb3 post-excerpt">
+                  
+                  Java cơ bản — Từ lớp đến JVM: hiểu để code không blind Slug: java-jvm-oop-co-ban
 Meta description: Giải mã OOP và JVM (JDK/JRE/JVM), hiểu stack vs …
-                      
-                    </p>
-                  </div>
-
-                  <div class="pa3 pa4-l mt-auto">
-                    <span class="f6 link dim br2 ph3 pv2 dib white bg-dark-blue post-cta">Đọc tiếp →</span>
-                  </div>
-
-                </div>
-              </a>
-            </article>
-          
-            
-            <article class="post-card">
-              <a href="https://taansfast.com/blog/bai-viet-2/" class="db no-underline color-inherit post-link" aria-label="Đọc bài: So sánh Java và JavaScript – Tưởng giống mà khác xa">
-                <div class="bg-white br3 shadow-4 h-100 flex flex-column overflow-hidden transition-all">
-
                   
-                  <div class="post-image-wrapper">
-                    
-                      
-                        <img src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://images.ctfassets.net/wp1lcwdav1p1/3iUNzpSg7BUtcHaUW1MQdc/2f11876a723565d664728e4cf2b2e2c9/GettyImages-1280720370_edited.png?w=1500&amp;h=680&amp;q=60&amp;fit=fill&amp;f=faces&amp;fm=jpg&amp;fl=progressive&amp;auto=format%2Ccompress&amp;dpr=2&amp;w=1000" alt="So sánh Java và JavaScript – Tưởng giống mà khác xa" class="img-cover" loading="lazy" />
-                      
-                    
-                    <div class="post-overlay"></div>
-                  </div>
+                </p>
+              </div>
 
-                  <div class="pa3 pa4-l flex-auto">
-                    <h3 class="mt0 mb2 f4 f5-l fw6 post-title">So sánh Java và JavaScript – Tưởng giống mà khác xa</h3>
+              <div class="pa3 pa4-l mt-auto">
+                <span class="f6 link dim br2 ph3 pv2 dib white bg-dark-blue post-cta">Đọc tiếp →</span>
+              </div>
 
-                    <div class="f6 mv1 mid-gray flex items-center" aria-hidden="false">
-                      <time datetime="2025-09-19" class="post-date">
-                        19 Sep 2025
-                      </time>
-                      <span class="mh2">•</span>
-                      <span class="post-reading-time">6 phút đọc</span>
-                    </div>
+            </div>
+          </a>
+        </article>
+        
+        
+        <article class="post-card card-hover interactive-element">
+          <a href="https://taansfast.com/blog/bai-viet-2/" class="db no-underline color-inherit post-link"
+            aria-label="Đọc bài: So sánh Java và JavaScript – Tưởng giống mà khác xa">
+            <div class="bg-white br3 shadow-4 h-100 flex flex-column overflow-hidden transition-all">
 
-                    <p class="f6 lh-copy measure mb3 post-excerpt">
-                      
-                        So sánh Java và JavaScript (2025)
+              
+              <div class="post-image-wrapper">
+                
+                
+                <img src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://images.ctfassets.net/wp1lcwdav1p1/3iUNzpSg7BUtcHaUW1MQdc/2f11876a723565d664728e4cf2b2e2c9/GettyImages-1280720370_edited.png?w=1500&amp;h=680&amp;q=60&amp;fit=fill&amp;f=faces&amp;fm=jpg&amp;fl=progressive&amp;auto=format%2Ccompress&amp;dpr=2&amp;w=1000" alt="So sánh Java và JavaScript – Tưởng giống mà khác xa" class="img-cover" loading="lazy" />
+                
+                
+                <div class="post-overlay"></div>
+              </div>
+
+              <div class="pa3 pa4-l flex-auto">
+                <h3 class="mt0 mb2 f4 f5-l fw6 post-title">So sánh Java và JavaScript – Tưởng giống mà khác xa</h3>
+
+                <div class="f6 mv1 mid-gray flex items-center" aria-hidden="false">
+                  <time datetime=" 2025-09-19" class="post-date">
+                    19 Sep 2025
+                  </time>
+                  <span class="mh2">•</span>
+                  <span class="post-reading-time">6 phút đọc</span>
+                </div>
+
+                <p class="f6 lh-copy measure mb3 post-excerpt">
+                  
+                  So sánh Java và JavaScript (2025)
 Nguồn gốc, môi trường chạy, cú pháp, ứng dụng thực tế và gợi ý học tập.
 Kèm code snippets và bảng so sánh nhanh.
 
-                      
-                    </p>
-                  </div>
+                  
+                </p>
+              </div>
 
-                  <div class="pa3 pa4-l mt-auto">
-                    <span class="f6 link dim br2 ph3 pv2 dib white bg-dark-blue post-cta">Đọc tiếp →</span>
-                  </div>
+              <div class="pa3 pa4-l mt-auto">
+                <span class="f6 link dim br2 ph3 pv2 dib white bg-dark-blue post-cta">Đọc tiếp →</span>
+              </div>
 
-                </div>
-              </a>
-            </article>
-          
-        </div>
-
-        <div class="tc mt5">
-          <a href="/blog/" class="f5 no-underline dib white bg-dark-blue bg-animate hover-bg-darkest-blue pv3 ph4 br2 grow shadow-hover" aria-label="Xem tất cả bài viết">
-            Xem thêm bài viết →
+            </div>
           </a>
-        </div>
-      </div>
-    </section>
-
-  </main>
-
-  
-  <link rel="stylesheet" href="/styles/home.min.b50a84d5131dbe892e7227b86312ecf70f33fa89ef5c449b5975c3c87821eb07.css" integrity="sha256-tQqE1RMdvokucie4YxLs9w8z&#43;onvXESbWXXDyHgh6wc=">
-  
-  <script>
-    
-    (function() {
-      const themeToggle = document.getElementById('theme-toggle');
-      const sunIcon = document.getElementById('sun-icon');
-      const moonIcon = document.getElementById('moon-icon');
-      
-      
-      const savedTheme = localStorage.getItem('theme') || 'light';
-      document.documentElement.setAttribute('data-theme', savedTheme);
-      
-      
-      function updateIcons(theme) {
-        if (theme === 'dark') {
-          sunIcon.style.display = 'none';
-          moonIcon.style.display = 'block';
-        } else {
-          sunIcon.style.display = 'block';
-          moonIcon.style.display = 'none';
-        }
-      }
-      
-      updateIcons(savedTheme);
-      
-      
-      themeToggle.addEventListener('click', function() {
-        const currentTheme = document.documentElement.getAttribute('data-theme');
-        const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+        </article>
         
-        document.documentElement.setAttribute('data-theme', newTheme);
-        localStorage.setItem('theme', newTheme);
-        updateIcons(newTheme);
-      });
-    })();
+      </div>
+
+      <div class="tc mt5">
+        <a href="/blog/"
+          class="f5 no-underline dib white bg-dark-blue bg-animate hover-bg-darkest-blue pv3 ph4 br2 grow shadow-hover"
+          aria-label="Xem tất cả bài viết">
+          Xem thêm bài viết →
+        </a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+
+<link rel="stylesheet" href="/styles/home.min.b7dfe7f29be6cdc15f3d775cb9725c26e926d63a8547d00791658f422fee8932.css" integrity="sha256-t9/n8pvmzcFfPXdcuXJcJukm1jqFR9AHkWWPQi/uiTI=">
+
+
+<style>
+   
+  .hero-section {
+    background: linear-gradient(135deg, #2a4365 0%, #1a365d 100%);
+    color: white;
+    padding: 5rem 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 3rem;
+  }
+
+  .animated-heading {
+    font-size: clamp(2rem, 5vw, 3.75rem);
+    font-weight: 800;
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .hero-subtitle {
+    font-size: clamp(1.125rem, 2.5vw, 1.5rem);
+    line-height: 1.6;
+    font-weight: 400;
+    opacity: 0.9;
+  }
+</style>
+
+
+<link rel="preload" href="/ananke/css/main.min.css" as="style">
+<link rel="preload" href="/styles/home.min.b7dfe7f29be6cdc15f3d775cb9725c26e926d63a8547d00791658f422fee8932.css" as="style">
+<link rel="dns-prefetch" href="//fonts.googleapis.com">
+<link rel="dns-prefetch" href="//cdnjs.cloudflare.com">
+
+
+
+
+
+
+
+
+
+
+<script>
+  
+  (function () {
+    const themeToggle = document.getElementById('theme-toggle');
+    const sunIcon = document.getElementById('sun-icon');
+    const moonIcon = document.getElementById('moon-icon');
+
     
+    const savedTheme = localStorage.getItem('theme') || 'light';
+    document.documentElement.setAttribute('data-theme', savedTheme);
+
     
-    (function() {
-      const searchInput = document.getElementById('search-input');
-      const searchBtn = document.getElementById('search-btn');
-      const searchResults = document.getElementById('search-results');
+    function updateIcons(theme) {
+      if (theme === 'dark') {
+        sunIcon.style.display = 'none';
+        moonIcon.style.display = 'block';
+      } else {
+        sunIcon.style.display = 'block';
+        moonIcon.style.display = 'none';
+      }
+    }
+
+    updateIcons(savedTheme);
+
+    
+    themeToggle.addEventListener('click', function () {
+      const currentTheme = document.documentElement.getAttribute('data-theme');
+      const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+
+      document.documentElement.setAttribute('data-theme', newTheme);
+      localStorage.setItem('theme', newTheme);
+      updateIcons(newTheme);
+
       
-      
-      const blogPosts = [
-        {
-          title: "Java cơ bản — Từ lớp đến JVM: hiểu để code không blind",
-          url: "/blog/bai-viet-1/",
-          excerpt: "Giải mã OOP và JVM (JDK/JRE/JVM), hiểu stack vs heap, GC, primitive vs wrapper và immutable — nền tảng để bạn viết Java vững vàng, ít bị lỗi runtime.",
-          tags: ["java", "jvm", "oop", "programming"]
-        },
-        {
-          title: "So sánh Java và JavaScript – Tưởng giống mà khác xa",
-          url: "/blog/bai-viet-2/",
-          excerpt: "Nguồn gốc, môi trường chạy, cú pháp, ứng dụng thực tế và gợi ý học tập. Kèm code snippets và bảng so sánh nhanh.",
-          tags: ["java", "javascript", "comparison", "programming"]
+      const ripple = document.createElement('span');
+      ripple.classList.add('ripple');
+      themeToggle.appendChild(ripple);
+
+      setTimeout(() => {
+        ripple.remove();
+      }, 600);
+    });
+  })();
+
+  
+  (function () {
+    const newsletterBtn = document.querySelector('.newsletter-btn');
+    const newsletterInput = document.querySelector('.newsletter-input');
+
+    if (newsletterBtn && newsletterInput) {
+      newsletterBtn.addEventListener('click', function () {
+        const email = newsletterInput.value.trim();
+
+        if (email && isValidEmail(email)) {
+          
+          newsletterBtn.textContent = 'Đang đăng ký...';
+          newsletterBtn.disabled = true;
+
+          setTimeout(() => {
+            newsletterBtn.textContent = 'Đã đăng ký!';
+            newsletterBtn.style.background = '#10b981';
+            newsletterInput.value = '';
+
+            setTimeout(() => {
+              newsletterBtn.textContent = 'Đăng ký';
+              newsletterBtn.disabled = false;
+              newsletterBtn.style.background = '';
+            }, 2000);
+          }, 1000);
+        } else {
+          
+          newsletterInput.style.borderColor = '#ef4444';
+          newsletterInput.placeholder = 'Vui lòng nhập email hợp lệ';
+
+          setTimeout(() => {
+            newsletterInput.style.borderColor = '';
+            newsletterInput.placeholder = 'Email của bạn...';
+          }, 3000);
         }
-      ];
+      });
+    }
+
+    function isValidEmail(email) {
+      return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+    }
+  })();
+
+  
+  (function () {
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+          });
+        }
+      });
+    });
+  })();
+
+  
+  (function () {
+    const observerOptions = {
+      threshold: 0.1,
+      rootMargin: '0px 0px -50px 0px'
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('animate-in');
+        }
+      });
+    }, observerOptions);
+
+    
+    document.querySelectorAll('.category-card, .testimonial-card, .post-card').forEach(el => {
+      observer.observe(el);
+    });
+  })();
+
+  
+  (function () {
+    const searchInput = document.getElementById('search-input');
+    const searchBtn = document.getElementById('search-btn');
+    const searchResults = document.getElementById('search-results');
+
+    
+    const blogPosts = [
+      {
+        title: "Java cơ bản — Từ lớp đến JVM: hiểu để code không blind",
+        url: "/blog/bai-viet-1/",
+        excerpt: "Giải mã OOP và JVM (JDK/JRE/JVM), hiểu stack vs heap, GC, primitive vs wrapper và immutable — nền tảng để bạn viết Java vững vàng, ít bị lỗi runtime.",
+        tags: ["java", "jvm", "oop", "programming"]
+      },
+      {
+        title: "So sánh Java và JavaScript – Tưởng giống mà khác xa",
+        url: "/blog/bai-viet-2/",
+        excerpt: "Nguồn gốc, môi trường chạy, cú pháp, ứng dụng thực tế và gợi ý học tập. Kèm code snippets và bảng so sánh nhanh.",
+        tags: ["java", "javascript", "comparison", "programming"]
+      },
+      {
+        title: "JavaScript hiện đại — ES6+ bạn phải biết (let/const, arrow, async/await)",
+        url: "/blog/bai-viet-3/",
+        excerpt: "Khám phá các tính năng mới của JavaScript ES6+: let/const, arrow functions, async/await, destructuring, template literals và nhiều hơn nữa.",
+        tags: ["javascript", "es6", "arrow-function", "async", "await", "let-const"]
+      }
+    ];
+
+    function searchPosts(query) {
+      console.log('Searching for:', query);
+
+      if (!query.trim()) {
+        searchResults.style.display = 'none';
+        return;
+      }
+
       
-      function searchPosts(query) {
-        if (!query.trim()) {
+      const loadingEl = searchResults.querySelector('.search-loading');
+      if (loadingEl) {
+        loadingEl.style.display = 'flex';
+      }
+
+      
+      function normalizeText(text) {
+        return text
+          .toLowerCase()
+          .normalize('NFD')
+          .replace(/[\u0300-\u036f]/g, '') 
+          .replace(/[^\w\s]/g, ' ') 
+          .replace(/\s+/g, ' ') 
+          .trim();
+      }
+
+      const normalizedQuery = normalizeText(query);
+      console.log('Normalized query:', normalizedQuery);
+
+      
+      setTimeout(() => {
+        const results = blogPosts.filter(post => {
+          const searchText = normalizeText(post.title + ' ' + post.excerpt + ' ' + post.tags.join(' '));
+
+          
+          const queryWords = normalizedQuery.split(' ').filter(word => word.length > 0);
+
+          
+          const isMatch = queryWords.every(word => searchText.includes(word));
+
+          console.log('Post:', post.title);
+          console.log('Search text:', searchText);
+          console.log('Query words:', queryWords);
+          console.log('Match:', isMatch);
+          return isMatch;
+        });
+
+        
+        if (loadingEl) {
+          loadingEl.style.display = 'none';
+        }
+
+        console.log('Search results:', results);
+        displaySearchResults(results, query);
+      }, 200);
+    }
+
+    function displaySearchResults(results, query) {
+      console.log('Displaying results:', results.length);
+
+      if (results.length === 0) {
+        searchResults.innerHTML = `
+            <div class="search-no-results">
+              <div style="text-align: center; padding: 20px;">
+                <div style="font-size: 24px; margin-bottom: 8px;">🔍</div>
+                <div>Không tìm thấy bài viết nào cho "${query}"</div>
+                <div style="font-size: 12px; margin-top: 8px; opacity: 0.7;">
+                  Thử tìm kiếm với từ khóa khác
+                </div>
+              </div>
+            </div>
+          `;
+      } else {
+        searchResults.innerHTML = results.map(post => `
+            <div class="search-result-item" onclick="window.location.href='${post.url}'">
+              <div class="search-result-thumbnail">
+                <div style="width: 100%; height: 100%; background: var(--light-bg); border-radius: 8px; display: flex; align-items: center; justify-content: center; color: var(--text-muted); font-size: 20px;">
+                  📄
+                </div>
+              </div>
+              <div class="search-result-content">
+                <div class="search-result-title">${highlightText(post.title, query)}</div>
+                <div class="search-result-excerpt">${highlightText(post.excerpt, query)}</div>
+                <div class="search-result-meta">
+                  <span>📖 ${post.tags.length} tags</span>
+                  <span>•</span>
+                  <div class="search-result-tags">
+                    ${post.tags.slice(0, 3).map(tag => `<span class="search-result-tag">${tag}</span>`).join('')}
+                  </div>
+                </div>
+              </div>
+            </div>
+          `).join('');
+      }
+
+      searchResults.style.display = 'block';
+      console.log('Search results displayed');
+    }
+
+    function highlightText(text, query) {
+      if (!query) return text;
+
+      
+      function normalizeText(text) {
+        return text
+          .toLowerCase()
+          .normalize('NFD')
+          .replace(/[\u0300-\u036f]/g, '')
+          .replace(/[^\w\s]/g, ' ')
+          .replace(/\s+/g, ' ')
+          .trim();
+      }
+
+      const normalizedQuery = normalizeText(query);
+      const normalizedText = normalizeText(text);
+
+      
+      const matchIndex = normalizedText.indexOf(normalizedQuery);
+      if (matchIndex === -1) return text;
+
+      
+      let originalIndex = 0;
+      let normalizedIndex = 0;
+
+      while (normalizedIndex < matchIndex && originalIndex < text.length) {
+        const char = text[originalIndex];
+        const normalizedChar = char
+          .toLowerCase()
+          .normalize('NFD')
+          .replace(/[\u0300-\u036f]/g, '')
+          .replace(/[^\w\s]/g, ' ');
+
+        if (normalizedChar === ' ') {
+          normalizedIndex++;
+        } else if (normalizedChar) {
+          normalizedIndex++;
+        }
+        originalIndex++;
+      }
+
+      
+      const beforeMatch = text.substring(0, originalIndex);
+      const match = text.substring(originalIndex, originalIndex + query.length);
+      const afterMatch = text.substring(originalIndex + query.length);
+
+      return `${beforeMatch}<mark style="background-color: rgba(255, 255, 0, 0.3); padding: 2px 4px; border-radius: 3px;">${match}</mark>${afterMatch}`;
+    }
+
+    function hideSearchResults() {
+      setTimeout(() => {
+        searchResults.style.display = 'none';
+      }, 200);
+    }
+
+    
+    function debugSearch() {
+      console.log('Search elements found:', {
+        searchInput: !!searchInput,
+        searchBtn: !!searchBtn,
+        searchResults: !!searchResults,
+        blogPosts: blogPosts.length
+      });
+    }
+
+    
+    if (searchInput && searchBtn && searchResults) {
+      debugSearch();
+
+      
+      let searchTimeout;
+
+      
+      searchInput.addEventListener('input', function () {
+        console.log('Search input:', this.value);
+        clearTimeout(searchTimeout);
+
+        if (this.value.trim().length === 0) {
           searchResults.style.display = 'none';
           return;
         }
-        
-        const results = blogPosts.filter(post => {
-          const searchText = (post.title + ' ' + post.excerpt + ' ' + post.tags.join(' ')).toLowerCase();
-          return searchText.includes(query.toLowerCase());
-        });
-        
-        displaySearchResults(results, query);
-      }
-      
-      function displaySearchResults(results, query) {
-        if (results.length === 0) {
-          searchResults.innerHTML = `
-            <div class="search-no-results">
-              Không tìm thấy bài viết nào cho "${query}"
-            </div>
-          `;
-        } else {
-          searchResults.innerHTML = results.map(post => `
-            <div class="search-result-item" onclick="window.location.href='${post.url}'">
-              <div class="search-result-title">${highlightText(post.title, query)}</div>
-              <div class="search-result-excerpt">${highlightText(post.excerpt, query)}</div>
-            </div>
-          `).join('');
-        }
-        
-        searchResults.style.display = 'block';
-      }
-      
-      function highlightText(text, query) {
-        if (!query) return text;
-        const regex = new RegExp(`(${query})`, 'gi');
-        return text.replace(regex, '<mark style="background-color: rgba(255, 255, 0, 0.3); padding: 2px 4px; border-radius: 3px;">$1</mark>');
-      }
-      
-      function hideSearchResults() {
-        setTimeout(() => {
-          searchResults.style.display = 'none';
-        }, 200);
-      }
-      
-      
-      searchInput.addEventListener('input', function() {
-        searchPosts(this.value);
+
+        searchTimeout = setTimeout(() => {
+          searchPosts(this.value);
+        }, 300);
       });
+
       
-      searchBtn.addEventListener('click', function() {
-        searchPosts(searchInput.value);
-      });
-      
-      searchInput.addEventListener('keypress', function(e) {
-        if (e.key === 'Enter') {
+      searchInput.addEventListener('focus', function () {
+        if (this.value.trim().length > 0) {
           searchPosts(this.value);
         }
       });
+
+      searchBtn.addEventListener('click', function () {
+        console.log('Search button clicked');
+        clearTimeout(searchTimeout);
+        searchPosts(searchInput.value);
+      });
+
+      searchInput.addEventListener('keypress', function (e) {
+        if (e.key === 'Enter') {
+          console.log('Enter pressed');
+          clearTimeout(searchTimeout);
+          searchPosts(this.value);
+        }
+      });
+
       
-      
-      document.addEventListener('click', function(e) {
+      document.addEventListener('click', function (e) {
         if (!e.target.closest('.search-container')) {
           hideSearchResults();
         }
       });
+
       
-      
-      document.addEventListener('keydown', function(e) {
+      document.addEventListener('keydown', function (e) {
         if (e.key === 'Escape') {
           hideSearchResults();
         }
       });
-    })();
-    
-    
-    if ('serviceWorker' in navigator) {
-      window.addEventListener('load', function() {
-        navigator.serviceWorker.register('/sw.js')
-          .then(function(registration) {
-            console.log('ServiceWorker registration successful');
-          })
-          .catch(function(err) {
-            console.log('ServiceWorker registration failed: ', err);
-          });
+    } else {
+      console.error('Search elements not found!');
+    }
+  })();
+
+  
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', function () {
+      navigator.serviceWorker.register('/sw.js')
+        .then(function (registration) {
+          console.log('ServiceWorker registration successful');
+        })
+        .catch(function (err) {
+          console.log('ServiceWorker registration failed: ', err);
+        });
+    });
+  }
+
+  
+  (function () {
+    if ('IntersectionObserver' in window) {
+      const imageObserver = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            const img = entry.target;
+            if (img.dataset.src) {
+              
+              img.classList.add('loading-skeleton');
+
+              
+              const newImg = new Image();
+              newImg.onload = function () {
+                img.src = this.src;
+                img.classList.remove('lazy-image-placeholder', 'loading-skeleton');
+                img.classList.add('loaded');
+              };
+              newImg.onerror = function () {
+                img.classList.remove('loading-skeleton');
+                img.classList.add('error-state');
+              };
+              newImg.src = img.dataset.src;
+
+              observer.unobserve(img);
+            }
+          }
+        });
+      }, {
+        rootMargin: '100px 0px',
+        threshold: 0.01
+      });
+
+      
+      document.querySelectorAll('img[data-src]').forEach(img => {
+        imageObserver.observe(img);
       });
     }
+
     
+    const criticalResources = [
+      '/css/main.css'
+    ];
+
+    criticalResources.forEach(resource => {
+      const link = document.createElement('link');
+      link.rel = 'preload';
+      link.href = resource;
+      link.as = resource.endsWith('.css') ? 'style' : 'image';
+      document.head.appendChild(link);
+    });
+  })();
+
+  
+  (function () {
     
-    (function() {
-      if ('IntersectionObserver' in window) {
-        const imageObserver = new IntersectionObserver((entries, observer) => {
-          entries.forEach(entry => {
-            if (entry.isIntersecting) {
-              const img = entry.target;
-              if (img.dataset.src) {
-                img.src = img.dataset.src;
-                img.classList.remove('lazy-image-placeholder');
-                img.classList.add('loaded');
-                observer.unobserve(img);
-              }
-            }
-          });
-        }, {
-          rootMargin: '50px 0px',
-          threshold: 0.01
+    if ('PerformanceObserver' in window) {
+      
+      new PerformanceObserver((entryList) => {
+        const entries = entryList.getEntries();
+        const lastEntry = entries[entries.length - 1];
+        console.log('LCP:', lastEntry.startTime);
+      }).observe({ entryTypes: ['largest-contentful-paint'] });
+
+      
+      new PerformanceObserver((entryList) => {
+        const entries = entryList.getEntries();
+        entries.forEach(entry => {
+          console.log('FID:', entry.processingStart - entry.startTime);
         });
-        
-        
-        document.querySelectorAll('img[data-src]').forEach(img => {
-          imageObserver.observe(img);
+      }).observe({ entryTypes: ['first-input'] });
+
+      
+      let clsValue = 0;
+      new PerformanceObserver((entryList) => {
+        const entries = entryList.getEntries();
+        entries.forEach(entry => {
+          if (!entry.hadRecentInput) {
+            clsValue += entry.value;
+          }
         });
-      }
-      
-      
-      const criticalResources = [
-        '/css/main.css',
-        '/images/gohugo-default-sample-hero-image.jpg'
-      ];
-      
-      criticalResources.forEach(resource => {
-        const link = document.createElement('link');
-        link.rel = 'preload';
-        link.href = resource;
-        link.as = resource.endsWith('.css') ? 'style' : 'image';
-        document.head.appendChild(link);
-      });
-    })();
-  </script>
+        console.log('CLS:', clsValue);
+      }).observe({ entryTypes: ['layout-shift'] });
+    }
+  })();
+</script>
 
     </main>
     

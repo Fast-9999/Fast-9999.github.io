@@ -60,7 +60,7 @@ Nguồn gốc, môi trường chạy, cú pháp, ứng dụng thực tế và g�
 Kèm code snippets và bảng so sánh nhanh.">
   <meta itemprop="datePublished" content="2025-09-19T00:00:00+00:00">
   <meta itemprop="dateModified" content="2025-09-19T00:00:00+00:00">
-  <meta itemprop="wordCount" content="1241">
+  <meta itemprop="wordCount" content="1242">
   <meta itemprop="keywords" content="Java,Javascript,Comparison,Programming">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="So sánh Java và JavaScript – Tưởng giống mà khác xa">
@@ -170,7 +170,7 @@ Kèm code snippets và bảng so sánh nhanh.">
         
           <time datetime="2025-09-19T00:00:00Z">September 19, 2025</time> ·
         
-        <span>6 minutes read · 1241 words</span>
+        <span>6 minutes read · 1242 words</span>
       </div>
 
       <div class="article-content nested-copy-line-height lh-copy serif f4 nested-links dark-gray">
@@ -320,15 +320,17 @@ Kèm code snippets và bảng so sánh nhanh.</p>
 <p><strong>Chạy nhanh:</strong> Dùng Spring Initializr (<a href="https://start.spring.io">https://start.spring.io</a>) để bootstrap, thêm dependency: Spring Web, build và chạy <code>./mvnw spring-boot:run</code>.</p></blockquote>
 <h2 id="javascript-nodejs--express-minimal-server">JavaScript: Node.js + Express minimal server</h2>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#75715e">// File: server.js
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">express</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#39;express&#39;</span>);
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">express</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#34;express&#34;</span>);
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">app</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">express</span>();
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#a6e22e">app</span>.<span style="color:#a6e22e">get</span>(<span style="color:#e6db74">&#39;/hello&#39;</span>, (<span style="color:#a6e22e">req</span>, <span style="color:#a6e22e">res</span>) =&gt; {
-</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">res</span>.<span style="color:#a6e22e">send</span>(<span style="color:#e6db74">&#39;Hello from JavaScript (Node.js + Express)!&#39;</span>);
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">app</span>.<span style="color:#a6e22e">get</span>(<span style="color:#e6db74">&#34;/hello&#34;</span>, (<span style="color:#a6e22e">req</span>, <span style="color:#a6e22e">res</span>) =&gt; {
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">res</span>.<span style="color:#a6e22e">send</span>(<span style="color:#e6db74">&#34;Hello from JavaScript (Node.js + Express)!&#34;</span>);
 </span></span><span style="display:flex;"><span>});
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">PORT</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">process</span>.<span style="color:#a6e22e">env</span>.<span style="color:#a6e22e">PORT</span> <span style="color:#f92672">||</span> <span style="color:#ae81ff">3000</span>;
-</span></span><span style="display:flex;"><span><span style="color:#a6e22e">app</span>.<span style="color:#a6e22e">listen</span>(<span style="color:#a6e22e">PORT</span>, () =&gt; <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">`Server listening on http://localhost:</span><span style="color:#e6db74">${</span><span style="color:#a6e22e">PORT</span><span style="color:#e6db74">}</span><span style="color:#e6db74">`</span>));
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">app</span>.<span style="color:#a6e22e">listen</span>(<span style="color:#a6e22e">PORT</span>, () =&gt;
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">`Server listening on http://localhost:</span><span style="color:#e6db74">${</span><span style="color:#a6e22e">PORT</span><span style="color:#e6db74">}</span><span style="color:#e6db74">`</span>)
+</span></span><span style="display:flex;"><span>);
 </span></span></code></pre></div><blockquote>
 <p><strong>Chạy nhanh:</strong> <code>npm init -y &amp;&amp; npm i express &amp;&amp; node server.js</code>.</p></blockquote>
 <hr>
